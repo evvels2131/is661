@@ -18,13 +18,11 @@ body
   padding-right: 5px
 
   .content
-    background-color: $secondary-color
+    background: linear-gradient(to right, $secondary-color, $primary-color)
     color: $text-color
     letter-spacing: 0.15em
-    padding: 10px 20px 10px 20px
-    border: 2px solid $dark-green
     border-radius: 0.3em
-    box-shadow: 0em 0.2em 0.15em 0em $shadow
+    padding: 15px 20px 15px 20px
 
 header
   margin-top: 100px
@@ -36,11 +34,16 @@ header
       .left
         float: left
         width: 68%
-        border-right: 2px solid $light-green
+        border-right: 1px solid #333
+        p
+          margin: 7.5px 0px 7.5px 0px
+
       .right
         float: right
         width: 31%
         text-align: right
+        p
+          margin: 7.5px 0px 7.5px 0px
 
       &::after
         content: ''
@@ -52,18 +55,17 @@ section
   .container
     .content
       min-height: 300px
+
       .heading
         font-size: 1.5em
         font-weight: 900
 
       hr
-        //border: 0
-        //height: 1px
-        //background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0))
         border: 0
         height: 1px
         background: #333
         background-image: linear-gradient(to right, #ccc, #333, #ccc)
+
       .text
-        padding-left: 15px
+        padding-left: 20px
         font-size: 1.3em
