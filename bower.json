@@ -1,0 +1,21 @@
+{
+  "name": "is661",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Tom <tgoralczyk1@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/evvels2131/is661",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "dist/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#^4.2.0"
+  }
+}

@@ -1,10 +1,69 @@
-$font-stack: Helvetica, sans-serif
-$primary-color: #333
+$font-stack: 'Roboto', sans-serif
+
+$primary-color: #F2E6CF
+$secondary-color: #F4F2ED
+$text-color: #353534
+$shadow: #C1C1BE
+$light-green: #7CC189
+$dark-green: #3FA757
 
 body
   font: 100% $font-stack
-  color: red
-  background-color: $primary-color
+  background: url('../img/school.png')
 
-  h1
-    color: yellow
+.container
+  max-width: 960px
+  margin: 0 auto
+  padding-left: 5px
+  padding-right: 5px
+
+  .content
+    background-color: $secondary-color
+    color: $text-color
+    letter-spacing: 0.15em
+    padding: 10px 20px 10px 20px
+    border: 2px solid $dark-green
+    border-radius: 0.3em
+    box-shadow: 0em 0.2em 0.15em 0em $shadow
+
+header
+  margin-top: 100px
+  .container
+    .content
+      font-size: 1.6em
+      font-weight: 900
+
+      .left
+        float: left
+        width: 68%
+        border-right: 2px solid $light-green
+      .right
+        float: right
+        width: 31%
+        text-align: right
+
+      &::after
+        content: ''
+        display: block
+        clear: both
+
+section
+  margin-top: 40px
+  .container
+    .content
+      min-height: 300px
+      .heading
+        font-size: 1.5em
+        font-weight: 900
+
+      hr
+        //border: 0
+        //height: 1px
+        //background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0))
+        border: 0
+        height: 1px
+        background: #333
+        background-image: linear-gradient(to right, #ccc, #333, #ccc)
+      .text
+        padding-left: 15px
+        font-size: 1.3em

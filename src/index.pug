@@ -5,12 +5,30 @@ html(lang='en')
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
 
+    link(rel='stylesheet' href='libs/normalize-css/normalize.css')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto')
     link(rel='stylesheet' href='css/main.min.css')
 
   body
-    h1 Hello World!
 
-    p.
-      What if I add a paragraph?
+    header
+      .container
+        .content
+          .left
+            p Tomasz Goralczyk
+          .right
+            p IS 661-100
+
+    section
+      .container
+        .content
+          p.heading Welcome to my website!
+          hr
+          p.text.
+            Here is where I will post links to my assignments.
+
+
+    //-footer
+      //-container
 
     script(src='js/main.min.js')
