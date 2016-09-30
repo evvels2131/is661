@@ -13,20 +13,18 @@ const uglify = require('gulp-uglify');
 const browserSync = require('browser-sync').create();
 
 const paths = {
-  js: './src/js/*.js',
-  sass: './src/sass/*.sass',
-  pug: './src/*.pug',
+  js: './src/**/*.js',
+  sass: './src/**/*.sass',
+  pug: './src/**/*.pug',
 
-  d_js: './dist/js',
-  d_css: './dist/css',
-  d_html: './dist',
+  dist: './dist',
 };
 
 gulp.task('pug', function () {
   return gulp.src(paths.pug)
     .pipe(plumber())
     .pipe(pug())
-  .pipe(gulp.dest(paths.d_html))
+  .pipe(gulp.dest(paths.dist))
     .pipe(browserSync.stream());
 });
 
@@ -38,7 +36,7 @@ gulp.task('sass', function () {
     .pipe(autoprefixer())
     .pipe(rename({ basename: 'main', suffix: '.min' }))
     .pipe(sourcemaps.write())
-  .pipe(gulp.dest(paths.d_css))
+  .pipe(gulp.dest(paths.dist))
     .pipe(browserSync.stream());
 });
 
@@ -47,11 +45,11 @@ gulp.task('scripts', function () {
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(babel())
-    .pipe(concat('main.js'))
+    //.pipe(concat('main.js')) causes problems
     .pipe(uglify())
     .pipe(rename({ suffix: '.min' }))
     .pipe(sourcemaps.write())
-  .pipe(gulp.dest(paths.d_js))
+  .pipe(gulp.dest(paths.dist))
     .pipe(browserSync.stream());
 });
 
