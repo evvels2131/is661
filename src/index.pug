@@ -6,7 +6,8 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1')
 
     link(rel='stylesheet' href='libs/normalize-css/normalize.css')
-    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto')
+    link(rel='stylesheet' href='libs/material-icons/css/material-icons.min.css')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons')
     link(rel='stylesheet' href='css/main.min.css')
 
   body
@@ -23,10 +24,15 @@ html(lang='en')
       .container
         .content
           p.heading Welcome to my website!
-          hr
-          p.text
-            Here I will post links to my assignments.
 
+          hr
+
+          p.text Below are links to my assignments:
+
+          a(href='yelp-mockup')
+            .link-rside Yelp Mockup
+            .link-lside
+              i(class='mi mi-insert-link')
 
     //-footer
       //-container
