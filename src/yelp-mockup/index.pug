@@ -6,7 +6,35 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1')
 
     link(rel='stylesheet' href='../libs/normalize-css/normalize.css')
+    link(rel='stylesheet' href='../libs/material-icons/css/material-icons.min.css')
     link(rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    link(rel='stylesheet' href='styles/main.min.css')
 
   body
-    h1  Yelp-mockup!
+    header
+      .container
+        .nav
+          .nav-left
+            span.nav-item.active Home
+            span.nav-item Write a Review
+            span.nav-item Talk
+            span.nav-item Events
+          .nav-right
+            span.nav-item Login
+            span.nav-item.sign-up Sign Up
+
+        .company-logo
+          img(src='img/yelp-logo.png' alt='Yelp Logo')
+
+        .search-input
+          .input-field.keyword Find tacos, cheap dinner...
+          .input-field Near Newark, NJ
+          .search-button
+            a.mi.mi-search
+
+
+    section
+      .container
+
+    footer
+      .container

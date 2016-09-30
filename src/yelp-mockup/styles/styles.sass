@@ -1,0 +1,94 @@
+$font-stack: 'Roboto', sans-serif
+
+$primary-color: #E02022
+$secondary-color: #F3F3F3
+$button-color: #A71819
+
+body
+  font: 100% $font-stack
+
+.container
+  max-width: 960px
+  margin: 0 auto
+
+header
+  background-color: $primary-color
+  height: 400px
+
+  .container
+    .nav
+      padding-top: 20px
+      height: 60px
+
+      .nav-item
+        display: inline-block
+        width: 130px
+        height: 30px
+        color: $secondary-color
+        border-radius: 5px
+        text-align: center
+        padding-top: 10px
+        margin-left: 10px
+        font-size: 1.1em
+
+      .active
+        box-shadow: 0px 1px 0px 0px $secondary-color
+
+      .sign-up
+        background-color: #A71819
+
+      .nav-left
+        width: 69%
+        float: left
+
+      .nav-right
+        float: right
+        width: 31%
+        text-align: right
+
+      &::after
+        content: ''
+        display: block
+        clear: both
+
+    .company-logo
+      width: 250px
+      margin: 0 auto
+
+      img
+        width: 250px
+
+    .search-input
+      padding-top: 25px
+      //border: 1px solid blue
+      margin: 0 auto
+      width: 800px
+
+      .input-field
+        width: 350px
+        height: 50px
+        font-size: 1.7em
+        background-color: white
+        //border: 1px solid yellow
+        float: left
+        padding-left: 15px
+        padding-top: 15px
+
+      .keyword
+        border-right: 1px solid black
+        //border: 1px solid $button-color
+
+      .search-button
+        background-color: #A71819
+        float: left
+        width: 59px
+        height: 58px
+        font-size: 3.25em
+        padding-top: 7px
+        padding-left: 10px
+        color: white
+
+      &::after
+        content: ''
+        display: block
+        clear: both
