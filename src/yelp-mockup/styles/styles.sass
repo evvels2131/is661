@@ -13,7 +13,8 @@ body
 
 header
   background-color: $primary-color
-  height: 400px
+  height: 760px
+  border-bottom: 2px outset black
 
   .container
     .nav
@@ -60,7 +61,6 @@ header
 
     .search-input
       padding-top: 25px
-      //border: 1px solid blue
       margin: 0 auto
       width: 800px
 
@@ -69,14 +69,12 @@ header
         height: 50px
         font-size: 1.7em
         background-color: white
-        //border: 1px solid yellow
         float: left
         padding-left: 15px
         padding-top: 15px
 
       .keyword
         border-right: 1px solid black
-        //border: 1px solid $button-color
 
       .search-button
         background-color: #A71819
@@ -92,3 +90,42 @@ header
         content: ''
         display: block
         clear: both
+
+    .categories
+      //border: 2px solid white
+      //height: 200px
+      margin-top: 30px
+      padding-left: 50px
+      padding-top: 40px
+
+      .box-category
+        width: 150px
+        height: 150px
+        border-radius: 3px
+        float: left
+        margin-left: 50px
+        margin-bottom: 30px
+        background-color: $secondary-color
+        box-shadow: 0px 0px 5px 2px $secondary-color
+
+        .box-content
+          width: 100px
+          margin: 0 auto
+          font-size: 0.9em
+          text-align: center
+          padding-top: 10px
+
+          img
+            margin-bottom: 10px
+
+          p
+            margin: 0
+
+      &::after
+        content: ''
+        display: block
+        clear: both
+
+section
+  height: 400px
+  background-color: $secondary-color
