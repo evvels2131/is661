@@ -1,0 +1,179 @@
+$font-stack: 'Roboto', sans-serif
+
+$primary-color: #CF2C2D
+$off-white: #F2F1F2
+$grey: #E3E2E3
+$dark-red: #CB1F20
+$very-dark-green: #8B1516
+
+body
+  font: 100% $font-stack
+
+.container
+  max-width: 960px
+  margin: 0 auto
+
+header
+  background-color: $primary-color
+  height: 100px
+
+  .container
+    .navigation
+      height: 100px
+
+      .col
+        height: 100px
+        width: 200px
+        float: left
+        margin-left: 10px
+
+      .col1
+        padding-top: 5px
+        img
+          width: 150px
+
+      .col2
+        width: 595px
+
+        .input-field
+          width: 243px
+          height: 50px
+          background-color: $off-white
+          float: left
+          margin-left: 5px
+          margin-top: 25px
+          padding-left: 15px
+          border-radius: 5px
+
+        .button
+          width: 50px
+          height: 46px
+          background-color: $very-dark-green
+          float: left
+          margin-left: 5px
+          margin-top: 25px
+          border-radius: 5px
+          color: white
+          font-size: 2.5em
+          padding-top: 5px
+          padding-left: 10px
+
+      .col3
+        width: 125px
+
+        .sign-up-button
+          height: 36px
+          background-color: $very-dark-green
+          margin-top: 25px
+          width: 100px
+          margin-left: 20px
+          border-radius: 5px
+          text-align: center
+          padding-top: 15px
+          color: $off-white
+
+          p
+            margin: 0
+
+section
+  background-color: $grey
+  border-bottom: 2px outset $primary-color
+
+  .container
+    height: 265px
+    border: 1px solid $grey
+
+    .row
+
+    .row1
+      .basic-information
+        border-bottom: 1px inset black
+        margin: 10px
+        padding-bottom: 10px
+        h1
+          margin: 5px
+        img
+          width: 30px
+          margin: 5px
+        p
+          font-size: 1.25em
+          margin-top: 10px
+
+        .left-side
+          float: left
+
+        .right-side
+          float: right
+
+          img
+            width: 200px
+            border-radius: 5px
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+
+        &::after
+          content: ''
+          display: block
+          clear: both
+
+    .row2
+      .picture
+        width: 220px
+        height: 150px
+        float: left
+        margin: 10px
+
+        img
+          width: 220px
+          height: 125px
+          border-radius: 5px
+          box-shadow: 0px 0px 5px 2.5px $primary-color
+
+        &::after
+          content: ''
+          display: block
+          clear: both
+    .row3
+      //background-color: yellow
+      border: 1px solid red
+      height: 1000px
+      margin-top: 175px
+
+      .left-side
+        height: 600px
+        width: 294px
+        //background-color: green
+        float: left
+
+        .row
+          width: 90%
+          margin: 0 auto
+          padding: 0px 5px 5px 10px
+          background-color: $off-white
+          border-radius: 5px
+          box-shadow: 0px 0px 5px 1px $primary-color
+
+          h1
+            padding-top: 7.5px
+
+          hr
+            margin-bottom: 20px
+
+          p
+            font-size: 1.3em
+            margin: 2.5px
+
+        .hours
+
+        .business-info
+          margin-top: 20px
+
+          h1
+            font-size: 1.75em
+
+
+
+      .right-side
+        height: 600px
+        width: 664px
+        background-color: yellow
+        float: left
