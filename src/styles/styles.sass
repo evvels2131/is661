@@ -65,46 +65,32 @@ section
         background: #333
         background-image: linear-gradient(to right, #ccc, #333, #ccc)
 
-      .text
-        padding-left: 20px
-        font-size: 1.3em
-        font-weight: 600
+      .assignment-box
+        margin-left: 25px
+        width: 30%
 
-      a
-        display: block
-        margin-left: 50px
-        width: 250px
-        height: 40px
-        border-radius: 4px
-        box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2)
-        color: black
-        text-align: center
-        text-decoration: none
-        font-size: 1.25em
-        background-image: linear-gradient(to right bottom, $shadow, $secondary-color)
+        hr
+          height: 1px
+          background: #333
+          background-image: linear-gradient(to right, $primary-color, $dark-green, $primary-color)
 
-        .name
-          display: block
-          float: left
-          padding-left: 35px
-          padding-top: 7.5px
+        .title
+          font-size: 1.5em
+          weight: 900
+          margin: 15px 0px 5px 0px
 
+        .list-item
+          margin-top: 7.5px
+          margin-left: 15px
+          font-size: 1.25em
 
-        .icon
-          display: block
-          float: right
-          padding-right: 35px
-          padding-top: 6px
-          font-size: 1.4em
+          a
+            color: $text-color
+            text-decoration: none
+            border-bottom: 1px dashed $text-color
 
-        &::after
-          content: ''
-          display: block
-          clear: both
-
-        &:hover
-          background-image: linear-gradient(to left bottom, $shadow, $secondary-color)
-          color: blue
+            &:hover
+              color: blue
 
 @media (max-width: 680px)
   .container
