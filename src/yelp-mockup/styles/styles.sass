@@ -92,8 +92,6 @@ header
         clear: both
 
     .categories
-      //border: 2px solid white
-      //height: 200px
       margin-top: 30px
       padding-left: 50px
       padding-top: 40px
@@ -127,5 +125,76 @@ header
         clear: both
 
 section
-  height: 400px
   background-color: $secondary-color
+  padding-top: 20px
+  padding-bottom: 20px
+
+  .container
+
+    h1
+      text-align: center
+
+    .recent-activities
+      margin-top: 40px
+
+      .activity-box
+        width: 300px
+        height: 400px
+        background-color: white
+        border-radius: 5px
+        box-shadow: 0px 0px 5px 1px $primary-color
+        float: left
+        margin-left: 12.5px
+        margin-bottom: 12.5px
+
+        .author
+          height: 60px
+
+          .author-picture
+            width: 50px
+            border-radius: 5px
+            margin-left: 10px
+            margin-top: 1.5px
+            float: left
+
+          .author-name
+            float: left
+            padding-left: 20px
+
+          &::after
+            content: ''
+            display: block
+            clear: both
+
+        .picture
+          height: 150px
+          width: 90%
+          margin: 0 auto
+          border-top: 1px solid black
+          padding-top: 5px
+
+          img
+            width: 100%
+            border-radius: 5px
+
+        .rating
+          width: 90%
+          margin: 0 auto
+
+          p
+            margin-bottom: 0
+            padding-bottom: 5px
+
+          .stars
+            width: 120px
+            margin-left: 140px
+
+            img
+              width: 25px
+              padding-left: 5px
+
+
+      &::after
+        content: ''
+        display: block
+        clear: both
