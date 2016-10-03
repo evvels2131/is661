@@ -5,4 +5,4 @@
 
 ### Yelp Assignment
 - [Yelp Landing Page](https://web.njit.edu/~tg77/is661/dist/yelp-mockup/landing-page.html)
-- [Yelp Business Page]()https://web.njit.edu/~tg77/is661/dist/yelp-mockup/business-page.html
+- [Yelp Business Page](https://web.njit.edu/~tg77/is661/dist/yelp-mockup/business-page.html)
