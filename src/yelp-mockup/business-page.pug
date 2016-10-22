@@ -19,12 +19,11 @@ html(lang='en')
           .col.col1
             img(src='https://s3-media2.fl.yelpcdn.com/assets/srv0/www_pages/95212dafe621/assets/img/brand_guidelines/yelp-2c.png' alt='yelp logo')
           .col.col2
-            .input-field.name
-              p #[strong Find] tacos, cheap dinner...
-            .input-field.location
-              p #[strong Near] Newark, NJ
-            .button
-              i.mi.mi-search
+            .search-input
+              input(type='text' placeholder='Find tacos, cheap dinner...' class='find')
+              input(type='text' placeholder='Near Newark, NJ' class='where')
+              .search-button #[span.mi.mi-search]
+
           .col.col3
             .sign-up-button
               p Sing up
@@ -35,76 +34,110 @@ html(lang='en')
           .basic-information
             .left-side
               h1 Fireside Grill & Bar
-              img(src='http://image.flaticon.com/icons/svg/222/222177.svg' alt='star')
-              img(src='http://image.flaticon.com/icons/svg/222/222177.svg' alt='star')
-              img(src='http://image.flaticon.com/icons/svg/222/222177.svg' alt='star')
-              img(src='http://image.flaticon.com/icons/svg/222/222177.svg' alt='star')
-              img(src='http://image.flaticon.com/icons/svg/222/222177.svg' alt='star')
+              img(src='img/business-page/star.svg' alt='star')
+              img(src='img/business-page/star.svg' alt='star')
+              img(src='img/business-page/star.svg' alt='star')
+              img(src='img/business-page/star.svg' alt='star')
+              img(src='img/business-page/star.svg' alt='star')
               p $$ #[strong American (Traditional), Sports Bar]
 
             .right-side
               img(src='img/yelp-map.png' alt='map')
         .row.row2
           .picture
-            img(src='http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2012/10/Food.jpg' alt='food')
+            img(src='img/business-page/meal-1.jpg' alt='food')
           .picture
-            img(src='http://travelchannel.sndimg.com/content/dam/images/travel/fullset/2014/08/06/c5/food-paradise-106-sandwich-ss-003' alt='food')
+            img(src='img/business-page/meal-2.jpg' alt='food')
           .picture
-            img(src='http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2012/10/Food.jpg' alt='food')
+            img(src='img/business-page/meal-3.jpg' alt='food')
           .picture
-            img(src='http://travelchannel.sndimg.com/content/dam/images/travel/fullset/2014/08/06/c5/food-paradise-106-sandwich-ss-003' alt='food')
+            img(src='img/business-page/meal-1.jpg' alt='food')
         .row.row3
           .left-side
-            .row.hours
+            .row
               h1 Hours
               hr
-              p #[strong Mon] &nbsp;11:00 am - 1:00 am
-              p #[strong Tue] &nbsp;&nbsp;11:00 am - 1:00 am
-              p #[strong Wed] &nbsp;11:00 am - 1:00 am
-              p #[strong Thu] &nbsp; 11:00 am - 1:00 am
-              p #[strong Fri] &nbsp;&nbsp;&nbsp;&nbsp;11:00 am - 2:00 am
-              p #[strong Sat] &nbsp;&nbsp;&nbsp;11:00 am - 2:00 am
-              p #[strong Sun] &nbsp;&nbsp;11:00 am - 12:00 am
+              .hours-listed
+                .days
+                  p #[strong Mon]
+                  p #[strong Tue]
+                  p #[strong Wed]
+                  p #[strong Thu]
+                  p #[strong Fri]
+                  p #[strong Sat]
+                  p #[strong Sun]
 
-            .row.menu
+                .hours
+                  p 11:00 am - 1:00 am
+                  p 11:00 am - 1:00 am
+                  p 11:00 am - 1:00 am
+                  p 11:00 am - 1:00 am
+                  p 11:00 am - 2:00 am
+                  p 11:00 am - 2:00 am
+                  p 11:00 am - 12:00 am
+
+            .row
               h1 Menu
               hr
-              p #[strong Teriyaki Steak] $18.99
-              p #[strong El Nacho Grande] $11.99
-              p #[strong Chicken Fingers] $8.99
-              p #[strong Tater Tots] $8.99
-              p #[strong Southwest Egg Rolls] $9.99
-              p #[strong Pretzel Bites] $7.99
-              p #[strong El Nacho Grande] $11.99
 
-            .row.business-info
-              h1 More business info
+              .menu
+                .name
+                  p #[strong Teriyaki Steak]
+                  p #[strong El Nacho Grande]
+                  p #[strong Chicken Fingers]
+                  p #[strong Tater Tots]
+                  p #[strong Egg Rolls]
+                  p #[strong Pretzel Bites]
+                  p #[strong El Nacho Grande]
+                .price
+                  p $18.99
+                  p $11.99
+                  p $8.99
+                  p $8.99
+                  p $9.99
+                  p $7.99
+                  p $11.99
+
+            .row
+              h1 Business Info
               hr
-              p Takes reservations: #[strong No]
-              p Delivery: #[strong No]
-              p Good For: #[strong Dinner]
-              p Parking: #[strong Private Lot]
-              p Attire: #[strong Causal]
-              p Alcohol: #[strong Full Bar]
-              p Smoking: #[strong No]
-              p Wi-Fi: #[strong Free]
+
+              .business-info
+                .left
+                  p Takes reservations:
+                  p Delivery:
+                  p Good for:
+                  p Parking:
+                  p Attire:
+                  p Alcohol:
+                  p Smoking:
+                  p Wi-Fi:
+                .right
+                  p #[strong No]
+                  p #[strong No]
+                  p #[strong Dinner]
+                  p #[strong Private Lot]
+                  p #[strong Casual]
+                  p #[strong Full Bar]
+                  p #[strong No]
+                  p #[strong Free]
 
           .right-side
             .review-box
               .row.row1
                 .left-side
-                  img(src='http://image.flaticon.com/icons/svg/122/122488.svg' alt='person')
+                  img(src='img/business-page/girl-1.svg' alt='person')
                   p.
                     #[strong Katelyn Hoff]
                     #[br] Jersey City, NJ
                     #[br] #[strong 19] friends
                     #[br] #[strong 94] reviews
                 .right-side
-                  img(src='http://image.flaticon.com/icons/svg/222/222177.svg' alt='star')
-                  img(src='http://image.flaticon.com/icons/svg/222/222177.svg' alt='star')
-                  img(src='http://image.flaticon.com/icons/svg/222/222177.svg' alt='star')
-                  img(src='http://image.flaticon.com/icons/svg/222/222177.svg' alt='star')
-                  img(src='http://image.flaticon.com/icons/svg/222/222177.svg' alt='star')
+                  img(src='img/business-page/star.svg' alt='star')
+                  img(src='img/business-page/star.svg' alt='star')
+                  img(src='img/business-page/star.svg' alt='star')
+                  img(src='img/business-page/star.svg' alt='star')
+                  img(src='img/business-page/star.svg' alt='star')
 
               .row.row2
                 .review-comment
@@ -124,17 +157,17 @@ html(lang='en')
             .review-box
               .row.row1
                 .left-side
-                  img(src='http://image.flaticon.com/icons/svg/122/122454.svg' alt='person')
+                  img(src='img/business-page/girl-2.svg' alt='person')
                   p.
                     #[strong Lorene Dillion]
                     #[br] Woodbridge, NJ
                     #[br] #[strong 36] friends
                     #[br] #[strong 112] reviews
                 .right-side
-                  img(src='http://image.flaticon.com/icons/svg/222/222177.svg' alt='star')
-                  img(src='http://image.flaticon.com/icons/svg/222/222177.svg' alt='star')
-                  img(src='http://image.flaticon.com/icons/svg/222/222177.svg' alt='star')
-                  img(src='http://image.flaticon.com/icons/svg/222/222177.svg' alt='star')
+                  img(src='img/business-page/star.svg' alt='star')
+                  img(src='img/business-page/star.svg' alt='star')
+                  img(src='img/business-page/star.svg' alt='star')
+                  img(src='img/business-page/star.svg' alt='star')
 
               .row.row2
                 .review-comment
@@ -153,16 +186,16 @@ html(lang='en')
             .review-box
               .row.row1
                 .left-side
-                  img(src='http://image.flaticon.com/icons/svg/122/122483.svg' alt='person')
+                  img(src='img/business-page/girl-1.svg' alt='person')
                   p.
                     #[strong Karyl Breese]
                     #[br] Holmdel, NJ
                     #[br] #[strong 9] friends
                     #[br] #[strong 12] reviews
                 .right-side
-                  img(src='http://image.flaticon.com/icons/svg/222/222177.svg' alt='star')
-                  img(src='http://image.flaticon.com/icons/svg/222/222177.svg' alt='star')
-                  img(src='http://image.flaticon.com/icons/svg/222/222177.svg' alt='star')
+                  img(src='img/business-page/star.svg' alt='star')
+                  img(src='img/business-page/star.svg' alt='star')
+                  img(src='img/business-page/star.svg' alt='star')
 
               .row.row2
                 .review-comment
@@ -182,17 +215,17 @@ html(lang='en')
             .review-box
               .row.row1
                 .left-side
-                  img(src='http://image.flaticon.com/icons/svg/122/122491.svg' alt='person')
+                  img(src='img/business-page/boy-1.svg' alt='person')
                   p.
                     #[strong Emilio Banda]
                     #[br] New York, NY
                     #[br] #[strong 19] friends
                     #[br] #[strong 294] reviews
                 .right-side
-                  img(src='http://image.flaticon.com/icons/svg/222/222177.svg' alt='star')
-                  img(src='http://image.flaticon.com/icons/svg/222/222177.svg' alt='star')
-                  img(src='http://image.flaticon.com/icons/svg/222/222177.svg' alt='star')
-                  img(src='http://image.flaticon.com/icons/svg/222/222177.svg' alt='star')
+                  img(src='img/business-page/star.svg' alt='star')
+                  img(src='img/business-page/star.svg' alt='star')
+                  img(src='img/business-page/star.svg' alt='star')
+                  img(src='img/business-page/star.svg' alt='star')
 
               .row.row2
                 .review-comment

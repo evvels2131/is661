@@ -5,6 +5,7 @@ $off-white: #F2F1F2
 $grey: #E3E2E3
 $dark-red: #CB1F20
 $very-dark-green: #8B1516
+$secondary-color: #F3F3F3
 
 body
   font: 100% $font-stack
@@ -35,28 +36,39 @@ header
       .col2
         width: 595px
 
-        .input-field
-          width: 243px
+        .search-input
+          display: flex
           height: 50px
-          background-color: $off-white
-          float: left
-          margin-left: 5px
           margin-top: 25px
-          padding-left: 15px
-          border-radius: 5px
 
-        .button
-          width: 50px
-          height: 46px
-          background-color: $very-dark-green
-          float: left
-          margin-left: 5px
-          margin-top: 25px
-          border-radius: 5px
-          color: white
-          font-size: 2.5em
-          padding-top: 5px
-          padding-left: 10px
+          .find
+            flex-grow: 2
+
+          .where
+            flex-grow: 2
+
+          .search-button
+            flex-grow: 1
+            background-color: #A71819
+
+            .mi-search
+              font-size: 2.5em
+              color: $secondary-color
+              padding-left: 12.5px
+              padding-top: 5px
+              transition: transform .25s ease-in-out
+
+              &:hover
+                cursor: pointer
+                transform: scale(1.125)
+
+          input[type='text']
+            font-size: 1.15em
+            padding-left: 15px
+
+            &::placeholder
+              font-weight: 900
+              color: #333332
 
       .col3
         width: 125px
@@ -71,6 +83,11 @@ header
           text-align: center
           padding-top: 15px
           color: $off-white
+          transition: transform 0.25s ease-out
+
+          &:hover
+            cursor: pointer
+            transform: translateY(0.5em)
 
           p
             margin: 0
@@ -82,8 +99,6 @@ section
   .container
     height: 265px
     border: 1px solid $grey
-
-    .row
 
     .row1
       .basic-information
@@ -121,6 +136,11 @@ section
         height: 150px
         float: left
         margin: 10px
+        transition: transform 0.45s ease-out
+
+        &:hover
+          cursor: pointer
+          transform: scale(1.25)
 
         img
           width: 220px
@@ -137,7 +157,6 @@ section
       margin-top: 175px
 
       .left-side
-        height: 600px
         width: 294px
         float: left
 
@@ -160,14 +179,37 @@ section
             font-size: 1.3em
             margin: 2.5px
 
-        .business-info
-          margin-top: 20px
+          .hours-listed
+            display: flex
 
-          h1
-            font-size: 1.75em
+            .days
+              flex-grow: 1
+
+            .hours
+              flex-grow: 1
+              text-align: right
+
+          .menu
+            display: flex
+
+            .name
+              flex-grow: 1
+
+            .price
+              flex-grow: 2
+              text-align: right
+
+          .business-info
+            display: flex
+
+            .left
+              flex-grow: 1
+
+            .right
+              flex-grow: 1
+              text-align: right
 
       .right-side
-        height: 600px
         width: 664px
         float: left
         margin-top: 20px
@@ -192,6 +234,11 @@ section
                 width: 100px
                 float: left
                 margin: 10px
+                transition: transform 0.5s ease-in-out
+
+                &:hover
+                  cursor: pointer
+                  transform: translateY(-1.2em) scale(1.15)
               p
                 float: left
 
