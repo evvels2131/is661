@@ -31,6 +31,11 @@ header
         padding-top: 10px
         margin-left: 10px
         font-size: 1.1em
+        transition: transform 0.25s ease-out
+
+        &:hover
+          cursor: pointer
+          transform: translateY(0.75em)
 
       .active
         box-shadow: 0px 1px 0px 0px $secondary-color
@@ -59,42 +64,53 @@ header
       img
         width: 250px
 
-    .search-input
-      padding-top: 25px
+    .search-input-2
       margin: 0 auto
-      width: 800px
+      width: 85%
+      display: flex
+      height: 55px
 
-      .input-field
-        width: 350px
-        height: 50px
-        font-size: 1.7em
-        background-color: white
-        float: left
-        padding-left: 15px
-        padding-top: 15px
+      .find
+        flex-grow: 4
 
-      .keyword
-        border-right: 1px solid black
+      .where
+        flex-grow: 4
 
       .search-button
+        flex-grow: 1
         background-color: #A71819
-        float: left
-        width: 59px
-        height: 58px
-        font-size: 3.25em
-        padding-top: 7px
-        padding-left: 10px
-        color: white
 
-      &::after
-        content: ''
-        display: block
-        clear: both
+        .mi-search
+          font-size: 2.75em
+          color: $secondary-color
+          padding-left: 12.5px
+          padding-top: 5px
+          transition: transform .25s ease-out
+
+          &:hover
+            cursor: pointer
+            transform: scale(1.15)
+
+      input[type='text']
+        font-size: 1.5em
+        padding-left: 15px
+
+        &::placeholder
+          font-weight: 900
+          color: #333332
 
     .categories
       margin-top: 30px
       padding-left: 50px
       padding-top: 40px
+
+      .move-up
+        &:hover
+          transform: translateY(-1em)
+
+      .move-down
+        &:hover
+          transform: translateY(1em)
 
       .box-category
         width: 150px
@@ -105,6 +121,10 @@ header
         margin-bottom: 30px
         background-color: $secondary-color
         box-shadow: 0px 0px 5px 2px $secondary-color
+        transition: transform 0.25s ease-out
+
+        &:hover
+          cursor: pointer
 
         .box-content
           width: 100px

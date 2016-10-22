@@ -27,42 +27,41 @@ html(lang='en')
         .company-logo
           img(src='img/yelp-logo.png' alt='Yelp Logo')
 
-        .search-input
-          .input-field.keyword #[strong Find] tacos, cheap dinner...
-          .input-field Near #[strong Newark, NJ]
-          .search-button
-            a.mi.mi-search
+        .search-input-2
+          input(type='text' placeholder='Find tacos, cheap dinner...' class='find')
+          input(type='text' placeholder='Near Newark, NJ' class='where')
+          .search-button #[span.mi.mi-search]
 
         .categories
-          .box-category
+          .box-category.move-up
             .box-content
               img(src='img/landing-page/store.svg' alt='restaurant')
               p Restaurants
-          .box-category
+          .box-category.move-up
             .box-content
               img(src='img/landing-page/cart.svg' alt='shopping')
               p Shopping
-          .box-category
+          .box-category.move-up
             .box-content
               img(src='img/landing-page/club.svg' alt='nightlife')
               p Nightlife
-          .box-category
+          .box-category.move-up
             .box-content
               img(src='img/landing-page/basketball.svg' alt='active life')
               p Active Life
-          .box-category
+          .box-category.move-down
             .box-content
               img(src='img/landing-page/razor.svg' alt='beauty and spas')
               p Beauty & Spas
-          .box-category
+          .box-category.move-down
             .box-content
               img(src='img/landing-page/car.svg' alt='automotive')
               p Automotive
-          .box-category
+          .box-category.move-down
             .box-content
               img(src='img/landing-page/tools.svg' alt='home improvements')
               p Home Services
-          .box-category
+          .box-category.move-down
             .box-content
               img(src='img/landing-page/more.svg' alt='more')
               p More
