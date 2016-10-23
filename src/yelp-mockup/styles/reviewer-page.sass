@@ -4,7 +4,7 @@ $primary-color: #CF2C2D
 $off-white: #F2F1F2
 $grey: #E3E2E3
 $dark-red: #CB1F20
-$very-dark-green: #8B1516
+$very-dark-red: #8B1516
 $secondary-color: #F3F3F3
 
 body
@@ -14,10 +14,11 @@ body
   max-width: 960px
   margin: 0 auto
 
-header
-  border: 1px solid white
+.row1
   background-color: $primary-color
   height: 100px
+  border: 1px solid $primary-color
+  border-bottom: 2px outset $very-dark-red
 
   .navigation
     display: flex
@@ -50,18 +51,20 @@ header
 
         .search-button
           flex-grow: 1
-          background-color: #A71819
 
-          i
-            font-size: 2.75em
-            color: $off-white
-            padding-top: 5px
-            padding-left: 10px
-            transition: transform .25s ease-in-out
+          .btn
+            width: 60px
+            height: 100%
+            background-color: #A71819
 
-            &:hover
-              cursor: pointer
-              transform: scale(1.1)
+            i
+              font-size: 2.75em
+              color: $off-white
+              padding-top: 2.5px
+              padding-left: 10px
+
+              &:hover
+                cursor: pointer
 
     .right
       flex-grow: 3
@@ -82,3 +85,156 @@ header
         &:hover
           cursor: pointer
           transform: translateY(1em)
+
+.row2
+  background-color: $grey
+  border-bottom: 2px outset $very-dark-red
+  padding-bottom: 20px
+
+  .business-overview
+    padding-top: 20px
+
+    .first-row
+      display: flex
+
+      .col1
+        flex-grow: 1
+
+        h1
+          margin: 0
+          padding-bottom: 5px
+          border-bottom: 2px inset $very-dark-red
+
+        .star-ratings
+          margin-top: 10px
+          border-bottom: 2px inset $very-dark-red
+          padding-bottom: 5px
+          img
+            width: 35px
+            margin-right: 5px
+
+        .address
+          margin-top: 10px
+          transition: color 0.25s ease-in-out
+
+          &:hover
+            cursor: pointer
+            color: blue
+
+          p
+            font-size: 1.2em
+            line-height: .5em
+            font-weight: 900
+
+      .col2
+        flex-grow: 1
+
+        .restaurant-image
+          text-align: right
+
+          img
+            width: 250px
+            border-radius: 5px
+            box-shadow: 2.5px 2.5px 2.5px $very-dark-red
+            transition: transform 0.25s ease-in-out
+
+            &:hover
+              cursor: pointer
+              transform: scale(1.2) translateY(1em)
+
+    .second-row
+      margin-top: 15px
+      border-top: 2px outset $very-dark-red
+
+      .image-gallery
+        text-align: center
+        margin-top: 20px
+        img
+          width: 225px
+          height: 145px
+          margin-right: 10px
+          box-shadow: 0px 0px 1px 2.5px $very-dark-red
+          border-radius: 5px
+          transition: transform 0.25s ease-in-out
+
+          &:hover
+            cursor: pointer
+            transform: scale(1.25) translateY(2em)
+
+.row3
+  .review-section
+    margin-top: 20px
+
+    .first-row
+      border-bottom: 2px inset $very-dark-red
+      padding-bottom: 5px
+      h1
+        margin: 0
+
+    .second-row
+      margin-top: 35px
+
+      .review-box
+        background-color: $grey
+        border-radius: 5px
+        width: 75%
+        margin: 0 auto
+        padding: 10px
+
+        .stars
+          border-bottom: 2px solid $off-white
+          img
+            width: 30px
+            margin: 7.5px
+
+            &:hover
+              cursor: pointer
+
+        .comment
+          border-bottom: 2px solid $off-white
+          padding-bottom: 5px
+
+          textarea
+            margin-top: 10px
+            width: 95%
+            padding: 15px
+            border-radius: 5px
+            border: 2px solid $very-dark-red
+
+        .submit
+          margin-top: 10px
+          font-size: 1.25em
+          font-weight: 900
+          text-align: right
+
+          .btn-submit
+            background-color: #43E578
+            padding: 10px
+            padding-left: 20px
+            width: 75px
+            display: inline-block
+            margin-right: 10px
+            text-align: left
+            border-radius: 5px
+            box-shadow: 0px 0px 1px 1px $very-dark-red
+            transition: transform 0.25s ease-in-out
+
+            &:hover
+              cursor: pointer
+              transform: translateX(-1em)
+
+          .btn-cancel
+            display: inline-block
+            width: 70px
+            padding: 10px
+            padding-left: 20px
+            background-color: #E54743
+            color: $off-white
+            text-align: left
+            border-radius: 5px
+            box-shadow: 0px 0px 1px 1px $very-dark-red
+            transition: transform 0.25s ease-in-out
+
+            &:hover
+              cursor: pointer
+              transform: translateX(1em)

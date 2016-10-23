@@ -11,7 +11,7 @@ html(lang='en')
     link(rel='stylesheet' href='styles/reviewer-page.css')
 
   body
-    header
+    .row1
       .container
         .navigation
           .left
@@ -20,12 +20,55 @@ html(lang='en')
             .search-input
               input(type='text' placeholder='Find tacos, cheap dinner...' class='find')
               input(type='text' placeholder='Near Newark, NJ' class='where')
-              .search-button #[i.material-icons search]
+              .search-button
+                .btn #[i.material-icons search]
 
           .right
             .sign-up-btn Sing Up
 
-    section
+    .row2
       .container
         .business-overview
+          .first-row
+            .col1
+              h1 Fireside Grill & Bar
+              .star-ratings
+                img(src='img/reviewer-page/star-2.svg' alt='star')
+                img(src='img/reviewer-page/star-2.svg' alt='star')
+                img(src='img/reviewer-page/star-2.svg' alt='star')
+                img(src='img/reviewer-page/star-2.svg' alt='star')
+                img(src='img/reviewer-page/star-black.svg' alt='empty star')
+              .address
+                p 133 Main Street, Colts Neck
+                p New Jersey, 07722
+            .col2
+              .restaurant-image
+                img(src='img/reviewer-page/restaurant-img.jpg' alt='restaurant image')
+
+          .second-row
+            .image-gallery
+              img(src='img/reviewer-page/meal-1.jpg' alt='meal')
+              img(src='img/reviewer-page/meal-2.jpg' alt='meal')
+              img(src='img/reviewer-page/meal-3.jpg' alt='meal')
+              img(src='img/reviewer-page/meal-1.jpg' alt='meal')
+
+    .row3
+      .container
         .review-section
+          .first-row
+            h1 Write a Review
+          .second-row
+            .review-box
+              .stars
+                img(src='img/reviewer-page/star-black.svg' alt='empty star')
+                img(src='img/reviewer-page/star-black.svg' alt='empty star')
+                img(src='img/reviewer-page/star-black.svg' alt='empty star')
+                img(src='img/reviewer-page/star-black.svg' alt='empty star')
+                img(src='img/reviewer-page/star-black.svg' alt='empty star')
+
+              .comment
+                textarea(rows='5') Please write your review in this box...
+
+              .submit
+                .btn-submit Submit
+                .btn-cancel Cancel
