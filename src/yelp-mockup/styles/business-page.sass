@@ -32,6 +32,10 @@ header
         padding-top: 5px
         img
           width: 150px
+          transition: transform 0.25s ease-in-out
+          &:hover
+            cursor: pointer
+            transform: scale(1.2)
 
       .col2
         width: 595px
@@ -49,18 +53,20 @@ header
 
           .search-button
             flex-grow: 1
-            background-color: #A71819
 
-            .mi-search
-              font-size: 2.5em
-              color: $secondary-color
-              padding-left: 12.5px
-              padding-top: 5px
-              transition: transform .25s ease-in-out
+            .btn
+              background-color: #A71819
+              width: 62.5px
+              height: 50px
 
-              &:hover
-                cursor: pointer
-                transform: scale(1.125)
+              .mi-search
+                font-size: 2.5em
+                color: $secondary-color
+                padding-left: 12.5px
+                padding-top: 5px
+
+                &:hover
+                  cursor: pointer
 
           input[type='text']
             font-size: 1.15em
@@ -124,6 +130,11 @@ section
             width: 200px
             border-radius: 5px
             box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+            transition: transform 0.25s ease-in-out
+
+            &:hover
+              cursor: pointer
+              transform: translateX(-2em) scale(1.1)
 
         &::after
           content: ''

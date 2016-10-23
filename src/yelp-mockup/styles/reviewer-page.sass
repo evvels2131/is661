@@ -29,6 +29,10 @@ body
       img
         width: 150px
         margin: 0
+        transition: transform 0.25s ease-in-out
+        &:hover
+          cursor: pointer
+          transform: scale(1.2)
     .middle
       flex-grow: 4
 
@@ -53,7 +57,7 @@ body
           flex-grow: 1
 
           .btn
-            width: 60px
+            width: 62.5px
             height: 100%
             background-color: #A71819
 
@@ -103,11 +107,9 @@ body
         h1
           margin: 0
           padding-bottom: 5px
-          border-bottom: 2px inset $very-dark-red
 
         .star-ratings
           margin-top: 10px
-          border-bottom: 2px inset $very-dark-red
           padding-bottom: 5px
           img
             width: 35px
