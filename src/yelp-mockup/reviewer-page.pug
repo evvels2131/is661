@@ -1,0 +1,31 @@
+doctype html
+html(lang='en')
+  head
+    title Tomasz Goralczyk - IS 661-100 - Yelp Mockup
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+
+    link(rel='stylesheet' href='../libs/normalize-css/normalize.css')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto')
+    link(rel='stylesheet' href='styles/reviewer-page.css')
+
+  body
+    header
+      .container
+        .navigation
+          .left
+            img(src='img/reviewer-page/yelp-logo.png' alt='yelp logo')
+          .middle
+            .search-input
+              input(type='text' placeholder='Find tacos, cheap dinner...' class='find')
+              input(type='text' placeholder='Near Newark, NJ' class='where')
+              .search-button #[i.material-icons search]
+
+          .right
+            .sign-up-btn Sing Up
+
+    section
+      .container
+        .business-overview
+        .review-section

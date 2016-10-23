@@ -1,0 +1,84 @@
+$font-stack: 'Roboto', sans-serif
+
+$primary-color: #CF2C2D
+$off-white: #F2F1F2
+$grey: #E3E2E3
+$dark-red: #CB1F20
+$very-dark-green: #8B1516
+$secondary-color: #F3F3F3
+
+body
+  font: 100% $font-stack
+
+.container
+  max-width: 960px
+  margin: 0 auto
+
+header
+  border: 1px solid white
+  background-color: $primary-color
+  height: 100px
+
+  .navigation
+    display: flex
+    margin-top: 5px
+
+    .left
+      flex-grow: 1
+      img
+        width: 150px
+        margin: 0
+    .middle
+      flex-grow: 4
+
+      .search-input
+        display: flex
+        height: 50px
+        margin-top: 20px
+
+        input[type='text']
+          font-size: 1.15em
+          padding-left: 15px
+          font-weight: 900
+          color: #333332
+
+        .find
+          flex-grow: 6
+
+        .where
+          flex-grow: 6
+
+        .search-button
+          flex-grow: 1
+          background-color: #A71819
+
+          i
+            font-size: 2.75em
+            color: $off-white
+            padding-top: 5px
+            padding-left: 10px
+            transition: transform .25s ease-in-out
+
+            &:hover
+              cursor: pointer
+              transform: scale(1.1)
+
+    .right
+      flex-grow: 3
+
+      .sign-up-btn
+        height: 35px
+        width: 75%
+        margin: 0 auto
+        margin-top: 20px
+        background-color: #A71819
+        color: $off-white
+        text-align: center
+        padding-top: 15px
+        font-weight: 900
+        border-radius: 5px
+        transition: transform .25s ease-in-out
+
+        &:hover
+          cursor: pointer
+          transform: translateY(1em)
