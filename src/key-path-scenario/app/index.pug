@@ -1,0 +1,203 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui')
+    meta(name='apple-mobile-web-app-capable' content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style' content='black')
+
+    title Group 10 - Project
+
+    link(rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    link(rel='stylesheet' href='../../libs/Framework7/dist/css/framework7.ios.min.css')
+    link(rel='stylesheet' href='../../libs/Framework7/dist/css/framework7.ios.colors.min.css')
+    link(rel='stylesheet' href='styles/main.css')
+
+  body
+    .views
+      .view.view-main
+        .navbar
+          .navbar-inner
+            .center.sliding Home
+
+        .pages.navbar-through.toolbar-through
+          div(data-page='home' class='page')
+            form(
+              class='searchbar searchbar-init'
+              data-search-list='.list-block-search'
+              data-search-in='.item-title'
+              data-found='.searchbar-found'
+              data-not-found='.searchbar-not-found'
+              )
+              .searchbar-input
+                input(type='search' placeholder='Search professors or classmates...')
+                a(href='#' class='searchbar-clear')
+              a(href='#' class='searchbar-cancel') Cancel
+            .searchbar-overlay
+            .page-content
+              .content-block-title.content-block-title-custom.
+                Searching in #[span.chip-custom NJIT] #[span.chip-custom Rutgers]
+              .content-block.searchbar-not-found Nothing Found
+              .list-block.media-list.list-block-search.searchbar-found.list-block-custom.inset
+                ul
+                  li
+                    a(href='#' class='item-link item-content')
+                      .item-inner
+                        .item-title-row
+                          .item-title.item-title-custom-student Randall	Rivera
+                          .item-after.item-after-custom 4.5
+                        .item-subtitle #[strong Student] at #[strong NJIT, Newark]
+                        .item-text.item-text-custom
+                          .item-text-custom-inner
+                            .itcs-left #[strong 43] reviews
+                            .itcs-right
+                              i.icon.material-icons star
+                              i.icon.material-icons star
+                              i.icon.material-icons star
+                              i.icon.material-icons star
+                              i.icon.material-icons star_half
+                  li
+                    a(href='#' class='item-link item-content')
+                      .item-inner
+                        .item-title-row
+                          .item-title.item-title-custom-professor Randall	Rivera
+                          .item-after.item-after-custom 4.5
+                        .item-subtitle #[strong Professor] at #[strong NJIT, Newark]
+                        .item-text.item-text-custom
+                          .item-text-custom-inner
+                            .itcs-left #[strong 43] reviews
+                            .itcs-right
+                              i.icon.material-icons star
+                              i.icon.material-icons star
+                              i.icon.material-icons star
+                              i.icon.material-icons star
+                              i.icon.material-icons star_half
+                  li
+                    a(href='#' class='item-link item-content')
+                      .item-inner
+                        .item-title-row
+                          .item-title.item-title-custom-student Randall	Rivera
+                          .item-after.item-after-custom 4.5
+                        .item-subtitle #[strong Student] at #[strong NJIT, Newark]
+                        .item-text.item-text-custom
+                          .item-text-custom-inner
+                            .itcs-left #[strong 43] reviews
+                            .itcs-right
+                              i.icon.material-icons star
+                              i.icon.material-icons star
+                              i.icon.material-icons star
+                              i.icon.material-icons star
+                              i.icon.material-icons star_half
+                  li
+                    a(href='#' class='item-link item-content')
+                      .item-inner
+                        .item-title-row
+                          .item-title.item-title-custom-professor Randall	Rivera
+                          .item-after.item-after-custom 4.5
+                        .item-subtitle #[strong Professor] at #[strong NJIT, Newark]
+                        .item-text.item-text-custom
+                          .item-text-custom-inner
+                            .itcs-left #[strong 43] reviews
+                            .itcs-right
+                              i.icon.material-icons star
+                              i.icon.material-icons star
+                              i.icon.material-icons star
+                              i.icon.material-icons star
+                              i.icon.material-icons star_half
+                  li
+                    a(href='#' class='item-link item-content')
+                      .item-inner
+                        .item-title-row
+                          .item-title.item-title-custom-student Randall	Rivera
+                          .item-after.item-after-custom 4.5
+                        .item-subtitle #[strong Student] at #[strong NJIT, Newark]
+                        .item-text.item-text-custom
+                          .item-text-custom-inner
+                            .itcs-left #[strong 43] reviews
+                            .itcs-right
+                              i.icon.material-icons star
+                              i.icon.material-icons star
+                              i.icon.material-icons star
+                              i.icon.material-icons star
+                              i.icon.material-icons star_half
+                  li
+                    a(href='#' class='item-link item-content')
+                      .item-inner
+                        .item-title-row
+                          .item-title.item-title-custom-professor Randall	Rivera
+                          .item-after.item-after-custom 4.5
+                        .item-subtitle #[strong Professor] at #[strong NJIT, Newark]
+                        .item-text.item-text-custom
+                          .item-text-custom-inner
+                            .itcs-left #[strong 43] reviews
+                            .itcs-right
+                              i.icon.material-icons star
+                              i.icon.material-icons star
+                              i.icon.material-icons star
+                              i.icon.material-icons star
+                              i.icon.material-icons star_half
+                  li
+                    a(href='#' class='item-link item-content')
+                      .item-inner
+                        .item-title-row
+                          .item-title.item-title-custom-professor Randall	Rivera
+                          .item-after.item-after-custom 4.5
+                        .item-subtitle #[strong Professor] at #[strong NJIT, Newark]
+                        .item-text.item-text-custom
+                          .item-text-custom-inner
+                            .itcs-left #[strong 43] reviews
+                            .itcs-right
+                              i.icon.material-icons star
+                              i.icon.material-icons star
+                              i.icon.material-icons star
+                              i.icon.material-icons star
+                              i.icon.material-icons star_half
+                  li
+                    a(href='#' class='item-link item-content')
+                      .item-inner
+                        .item-title-row
+                          .item-title.item-title-custom-professor Randall	Rivera
+                          .item-after.item-after-custom 4.5
+                        .item-subtitle #[strong Professor] at #[strong NJIT, Newark]
+                        .item-text.item-text-custom
+                          .item-text-custom-inner
+                            .itcs-left #[strong 43] reviews
+                            .itcs-right
+                              i.icon.material-icons star
+                              i.icon.material-icons star
+                              i.icon.material-icons star
+                              i.icon.material-icons star
+                              i.icon.material-icons star_half
+                  li
+                    a(href='#' class='item-link item-content')
+                      .item-inner
+                        .item-title-row
+                          .item-title.item-title-custom-student Randall	Rivera
+                          .item-after.item-after-custom 4.5
+                        .item-subtitle #[strong Student] at #[strong NJIT, Newark]
+                        .item-text.item-text-custom
+                          .item-text-custom-inner
+                            .itcs-left #[strong 43] reviews
+                            .itcs-right
+                              i.icon.material-icons star
+                              i.icon.material-icons star
+                              i.icon.material-icons star
+                              i.icon.material-icons star
+                              i.icon.material-icons star_half
+        .toolbar.tabbar.tabbar-labels
+          .toolbar-inner
+            a(href='index.html' class='link active')
+              i.icon.material-icons home
+              span.tabbar-label Home
+            a(href='#' class='link')
+              i.icon.material-icons home
+              span.tabbar-label Link#2
+            a(href='#' class='link')
+              i.icon.material-icons home
+              span.tabbar-label Link#3
+            a(href='settings/index.html' class='link')
+              i.icon.material-icons home
+              span.tabbar-label Settings
+
+    script(src='../../libs/Framework7/dist/js/framework7.min.js')
+    script(src='js/main.min.js')
