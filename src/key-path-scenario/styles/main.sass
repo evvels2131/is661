@@ -1,0 +1,47 @@
+$font-stack: 'Roboto', Helvetica, sans-serif
+
+$green-color: #505073
+$bkg-color: #F2F2F3
+
+body
+  font: 100% $font-stack
+  background-image: url('../../img/key-path-scenario/bg-img.png')
+
+.container
+  max-width: 960px
+  margin: 0 auto
+
+hr
+  height: 2px
+  border: none
+  background-image: linear-gradient(to right, $bkg-color, $green-color, 75%, $bkg-color)
+  margin: 0 auto
+  width: 95%
+
+.main-row-1
+  height: 100px
+
+  .content
+    display: flex
+    color: $green-color
+    letter-spacing: .25em
+
+    .col-1
+      flex-grow: 1
+      font-size: 1.2em
+      padding-top: 0
+
+    .col-2
+      flex-grow: 1
+      padding-top: 0
+      line-height: .1em
+      text-align: right
+      font-weight: 500
+
+.main-row-2
+  margin-top: 25px
+  .content
+    text-align: center
+
+    img
+      width: 430px
