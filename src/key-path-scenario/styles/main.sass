@@ -1,6 +1,6 @@
 $font-stack: 'Roboto', Helvetica, sans-serif
 
-$green-color: #505073
+$text-color: #756233
 $bkg-color: #F2F2F3
 
 body
@@ -14,7 +14,7 @@ body
 hr
   height: 2px
   border: none
-  background-image: linear-gradient(to right, $bkg-color, $green-color, 75%, $bkg-color)
+  background-image: linear-gradient(to right, $bkg-color, $text-color, 75%, $bkg-color)
   margin: 0 auto
   width: 95%
 
@@ -23,7 +23,7 @@ hr
 
   .content
     display: flex
-    color: $green-color
+    color: $text-color
     letter-spacing: .25em
 
     .col-1
@@ -42,6 +42,17 @@ hr
   margin-top: 25px
   .content
     text-align: center
+    position: relative
 
-    img
-      width: 430px
+    .iframes
+      .app-screen
+        position: absolute
+        top: 96px
+        left: 288px
+        height: 679px
+        width: 385px
+        //border: 1px solid red
+        background: yellow
+
+      img
+        width: 435px
