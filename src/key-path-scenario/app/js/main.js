@@ -13,6 +13,18 @@
     addActive(0);
   });
 
+  // `Bookmarks` view
+  myApp.onPageInit('bookmarks', function (page) {
+    console.log('bookmarks');
+    addActive(1);
+  });
+
+  // `Top Lists` view
+  myApp.onPageInit('top-lists', function (page) {
+    console.log('top-lists');
+    addActive(2);
+  });
+
   // `Settings` view
   myApp.onPageInit('settings', function (page) {
     console.log('settings');
