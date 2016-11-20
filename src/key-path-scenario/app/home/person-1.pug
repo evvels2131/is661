@@ -1,0 +1,188 @@
+.navbar
+  .navbar-inner
+    .left.sliding
+      a(href='index.html' class='link')
+        i.icon.icon-back
+        span Back
+    .center.sliding Details
+    .right
+
+    .subnavbar
+      .buttons-row
+        a(href='#ratings' class='button tab-link active') Ratings
+        a(href='#comments' class='button tab-link') Comments
+
+.pages
+  div(data-page='person-1' class='page with-subnavbar')
+    .page-content.hide-bars-on-scroll
+      .tabs
+        //- --> Ratings
+        #ratings.tab.active
+          .card
+            .card-header.card-header-custom
+              .chc-left Randall Rivera
+              .chc-right #[span.rating-person-details(style='color: #2EA41F') 4.5]
+            .card-content
+              .card-content-inner
+                .row.no-gutter
+                  .col-20 #[i.material-icons place]
+                  .col-80.col-80-custom Newark, New Jersey
+                .row.no-gutter
+                  .col-20 #[i.material-icons school]
+                  .col-80.col-80-custom New Jersey Institute of Technology
+                .row.no-gutter
+                  .col-20 #[i.material-icons subdirectory_arrow_right]
+                  .col-80.col-80-custom Information Systems
+          .content-block-title Based On #[strong 201] Ratings
+          .card
+            .card-header Ratings
+            .card-content
+              .card-content-inner
+                .cci-custom
+                  .cci-row-1 #[i.material-icons poll]
+                  .cci-row-2 Attends Group Meetings
+                  .cci-row-3 #[span.okay 3]/5
+                .cci-custom
+                  .cci-row-1 #[i.material-icons poll]
+                  .cci-row-2 Contributes to Discussions
+                  .cci-row-3 #[span.good 5]/5
+                .cci-custom
+                  .cci-row-1 #[i.material-icons poll]
+                  .cci-row-2 Completes Tasks on Time
+                  .cci-row-3 #[span.good 4]/5
+                .cci-custom
+                  .cci-row-1 #[i.material-icons poll]
+                  .cci-row-2 Quality of Completed Work
+                  .cci-row-3 #[span.good 5]/5
+                .cci-custom
+                  .cci-row-1 #[i.material-icons poll]
+                  .cci-row-2 Cooperative & Supportive
+                  .cci-row-3 #[span.okay 3]/5
+                .cci-custom.cci-custom-last
+                  .cci-row-1 #[i.material-icons poll]
+                  .cci-row-2 Contributes Significantly
+                  .cci-row-3 #[span.okay 3]/5
+
+        //- --> Comments
+        #comments.tab
+          .card
+            .card-header.card-header-custom-comments
+              .chchcc-col1 19 Nov 2016
+              .chchcc-col2
+                i.material-icons star
+                i.material-icons star
+                i.material-icons star
+                i.material-icons star
+                i.material-icons star_border
+            .card-content
+              .card-content-inner.
+                It was a pleasure working with this guy. He fully contributed
+                to the group project and was on time with all his tasks. Would
+                recommend working with him to anyone.
+            .card-footer.card-footer-custom-comments
+              .card-footer-inner-custom
+                .col.col1 #[i.material-icons thumb_up]
+                .col.count 5
+                .col.col3 #[i.material-icons thumb_down]
+                .col.count 0
+                .col.col5 #[i.material-icons flag]
+          .card
+            .card-header.card-header-custom-comments
+              .chchcc-col1 10 Nov 2016
+              .chchcc-col2
+                i.material-icons star
+                i.material-icons star
+                i.material-icons star
+                i.material-icons star_border
+                i.material-icons star_border
+            .card-content
+              .card-content-inner.
+                I have no issues with the guy, however, he was sometimes unavailable
+                due to his job. Other than that he's pretty chill.
+            .card-footer.card-footer-custom-comments
+              .card-footer-inner-custom
+                .col.col1 #[i.material-icons thumb_up]
+                .col.count 1
+                .col.col3 #[i.material-icons thumb_down]
+                .col.count 0
+                .col.col5 #[i.material-icons flag]
+          .card
+            .card-header.card-header-custom-comments
+              .chchcc-col1 1 Nov 2016
+              .chchcc-col2
+                i.material-icons star
+                i.material-icons star
+                i.material-icons star
+                i.material-icons star
+                i.material-icons star
+            .card-content
+              .card-content-inner.
+                This dude's great. He was always available whenever I needed
+                him to explain some stuff to me. Definitely recommend it to others.
+            .card-footer.card-footer-custom-comments
+              .card-footer-inner-custom
+                .col.col1 #[i.material-icons thumb_up]
+                .col.count 4
+                .col.col3 #[i.material-icons thumb_down]
+                .col.count 0
+                .col.col5 #[i.material-icons flag]
+          .card
+            .card-header.card-header-custom-comments
+              .chchcc-col1 26 Oct 2016
+              .chchcc-col2
+                i.material-icons star
+                i.material-icons star
+                i.material-icons star
+                i.material-icons star_half
+                i.material-icons star_border
+            .card-content
+              .card-content-inner.
+                Mehhh, he was okay...
+            .card-footer.card-footer-custom-comments
+              .card-footer-inner-custom
+                .col.col1 #[i.material-icons thumb_up]
+                .col.count 0
+                .col.col3 #[i.material-icons thumb_down]
+                .col.count 0
+                .col.col5 #[i.material-icons flag]
+          .card
+            .card-header.card-header-custom-comments
+              .chchcc-col1 20 Oct 2016
+              .chchcc-col2
+                i.material-icons star
+                i.material-icons star
+                i.material-icons star
+                i.material-icons star
+                i.material-icons star_border
+            .card-content
+              .card-content-inner.
+                He was in my IS 661 class, he's pretty chill. Never had issues
+                with the guy.
+            .card-footer.card-footer-custom-comments
+              .card-footer-inner-custom
+                .col.col1 #[i.material-icons thumb_up]
+                .col.count 5
+                .col.col3 #[i.material-icons thumb_down]
+                .col.count 0
+                .col.col5 #[i.material-icons flag]
+          .card
+            .card-header.card-header-custom-comments
+              .chchcc-col1 14 Oct 2016
+              .chchcc-col2
+                i.material-icons star
+                i.material-icons star
+                i.material-icons star
+                i.material-icons star
+                i.material-icons star_border
+            .card-content
+              .card-content-inner.
+                It was a pleasure working with this guy. He fully contributed
+                to the group project and was on time with all his tasks. Would
+                recommend working with him to anyone.
+            .card-footer.card-footer-custom-comments
+              .card-footer-inner-custom
+                .col.col1 #[i.material-icons thumb_up]
+                .col.count 5
+                .col.col3 #[i.material-icons thumb_down]
+                .col.count 0
+                .col.col5 #[i.material-icons flag]
