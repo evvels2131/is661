@@ -32,6 +32,25 @@
     addActive(3);
   });
 
+  myApp.onPageInit('person-1', function (page) {
+    console.log('person-1');
+
+    // `More` Button in Person View
+    $$('.action-button').on('click', function () {
+      console.log('action button clicked');
+      const buttons = [
+        {
+          text: '<a href="home/rate-student.html">Rate This Person</a>'
+        },
+        {
+          text: 'Cancel',
+          color: 'red'
+        }
+      ];
+      myApp.actions(buttons);
+    });
+  });
+
   function addActive(id) {
     const links = $$('.toolbar-inner').children();
     const activeLink = links[id];

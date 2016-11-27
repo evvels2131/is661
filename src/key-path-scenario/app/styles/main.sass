@@ -1,3 +1,5 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css)
+
 // Home --> HASH: DPNI4
 .content-block-title-DPNI4
   height: 25px
@@ -139,7 +141,7 @@
   .ccir-right
     flex-grow: 1
     text-align: right
-    color: rgb(0, 111, 255)
+    //color: rgb(0, 111, 255)
 .content-block-inner-row-0F8S7
   display: flex
   .left
@@ -187,6 +189,132 @@
   height: 20px
 .row-0F8S7
   margin-bottom: 5px
-.content-block-title-0F8S7
-  //margin-top: 15px
-// Unused hashes --> MAFER 8IKRT 22KKZ 3QXQP BO73J RA50E YKN4M NKWKA
+.cci-rating-0F8S7
+  .ccir-row1
+    text-align: center
+    letter-spacing: 1.25px
+    font-weight: 600
+    font-size: 1.25em
+    margin-bottom: 5px
+    span
+      color: red
+      display: inline-block
+      margin-right: 2.5px
+  .ccir-row2
+    text-align: center
+    fieldset, label
+      margin: 0
+      padding: 0
+    .rating
+      border: none
+      display: inline-block
+      >
+        input
+          display: none
+        label:before
+          margin: 2.5px
+          font-size: 2.25em
+          font-family: FontAwesome
+          display: inline-block
+          content: '\f005'
+        .half:before
+          content: '\f089'
+          position: absolute
+        label
+          color: #ddd
+          float: right
+        input:checked ~ label
+          color: #FFD700
+      &:not(:checked) > label:hover
+        color: #FFD700
+        ~ label
+          color: #FFD700
+      >
+        input:checked
+          + label:hover, ~ label:hover
+            color: #FFED85
+        label:hover ~ input:checked ~ label, input:checked ~ label:hover ~ label
+          color: #FFED85
+    &::after
+      content: ''
+      display: block
+      clear: both
+  .ccir-row3
+    display: flex
+    font-size: .9em
+    color: rgb(153, 153, 153)
+    .col1
+      flex-grow: 1
+      .col1-inside-left
+        float: left
+        width: 30px
+        i
+          transform: rotate(180deg)
+      .col1-inside-right
+        padding-top: 2.5px
+    .col2
+      flex-grow: 1
+      text-align: right
+      .col2-inside-left
+        float: right
+        width: 30px
+      .col2-inside-right
+        padding-top: 2.5px
+  &::after
+    content: ''
+    display: block
+    clear: both
+.label-0F8S7
+  font-weight: 500
+  .mandatory-0F8S7
+    color: red
+
+// Rating Submission Confirmation --> MAFER
+.content-block-MAFER
+  width: 94%
+  margin: 10px auto 0 auto
+  .content-block-inner-MAFER
+    text-align: center
+    .row1
+      color: green
+      i
+        font-size: 4em
+    .row2
+      margin-bottom: 5px
+      font-size: 1.75em
+    .row3
+      font-size: 1.25em
+.card-header-MAFER
+  .col1
+    font-weight: 600
+    letter-spacing: 1px
+  .col2
+    i
+      padding-top: 5px
+.card-content-inner-MAFER
+  display: flex
+  .col1
+    flex-grow: 1
+    .row1
+      font-weight: 600
+      font-size: 1.15em
+      margin-bottom: 5px
+    .row2
+      font-size: 1.05em
+      span
+        font-weight: 600
+  .col2
+    flex-grow: 1
+    .coupon-code
+      border: 1px solid rgb(197, 197, 197)
+      margin: 0 auto
+      padding: 5px
+      text-align: center
+      border-radius: 5px
+      background-color: rgb(226, 242, 248)
+      font-weight: 600
+      margin-top: 10px
+      width: 95px
+
+
+// Unused hashes --> 8IKRT 22KKZ 3QXQP BO73J RA50E YKN4M NKWKA
