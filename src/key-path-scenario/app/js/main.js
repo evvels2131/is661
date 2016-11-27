@@ -18,18 +18,31 @@
   myApp.onPageInit('bookmarks', function (page) {
     console.log('bookmarks');
     addActive(1);
-  });
 
-  // `Top Lists` view
-  myApp.onPageInit('top-lists', function (page) {
-    console.log('top-lists');
-    addActive(2);
+    $$('#col2-8IKRT-p2').on('click', function () {
+      $$('#row4-8IKRT-p2').toggleClass('row4-8IKRT-show');
+    });
+    $$('#col2-8IKRT-p6').on('click', function () {
+      $$('#row4-8IKRT-p6').toggleClass('row4-8IKRT-show');
+    });
+    $$('#col2-8IKRT-p7').on('click', function () {
+      $$('#row4-8IKRT-p7').toggleClass('row4-8IKRT-show');
+    });
+    $$('#col2-8IKRT-p1').on('click', function () {
+      $$('#row4-8IKRT-p1').toggleClass('row4-8IKRT-show-student');
+    });
+    $$('#col2-8IKRT-p3').on('click', function () {
+      $$('#row4-8IKRT-p3').toggleClass('row4-8IKRT-show-student');
+    });
+    $$('#col2-8IKRT-p5').on('click', function () {
+      $$('#row4-8IKRT-p5').toggleClass('row4-8IKRT-show-student');
+    });
   });
 
   // `Settings` view
   myApp.onPageInit('settings', function (page) {
     console.log('settings');
-    addActive(3);
+    addActive(2);
   });
 
   myApp.onPageInit('person-1', function (page) {
@@ -43,9 +56,12 @@
           text: '<a href="home/rate-student.html">Rate This Person</a>'
         },
         {
+          text: '<a href="bookmarks/index.html">Save This Person</a>'
+        },
+        {
           text: 'Cancel',
           color: 'red'
-        }
+        },
       ];
       myApp.actions(buttons);
     });

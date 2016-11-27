@@ -1,8 +1,309 @@
+//- Bookmarks
 .navbar
   .navbar-inner
     .center.sliding Bookmarks
+    .subnavbar
+      .buttons-row
+        a(href='#professors' class='button tab-link active') Professors
+        a(href='#students' class='button tab-link') Students
+        a(href='#coupons' class='button tab-link') Coupons
 
 .pages
-  div(data-page='bookmarks' class='page')
-    .page-content
-      .content-block-title In The Works...
+  div(data-page='bookmarks' class='page with-subnavbar')
+    .page-content.hide-bars-on-scroll
+      .tabs
+        //- --> Professors
+        #professors.tab.active
+          .content-block-title Showing Your Saved Professors
+          .card
+            .card-header.card-header-8IKRT
+              .col1 Renee Porter
+              .col2
+                .rating 3
+            .card-content
+              .card-content-inner.card-content-inner-8IKRT
+                .row1 Professor at NJIT
+                .row2
+                  .col1 #[span 110] ratings
+                  .col2
+                    i.material-icons star
+                    i.material-icons star
+                    i.material-icons star
+                    i.material-icons star_border
+                    i.material-icons star_border
+                .row3
+                  .col1
+                    a(href='home/person-2.html')
+                      .left #[i.material-icons account_box]
+                      .right Show Profile
+                  #col2-8IKRT-p2.col2.col2-8IKRT
+                    .left Quick Overview
+                    .right #[i.material-icons details]
+                #row4-8IKRT-p2.row4-8IKRT.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            .card-footer.card-footer-8IKRT
+              .right
+                .inside-left Saved
+                .inside-right #[i.material-icons bookmark]
+          .card
+            .card-header.card-header-8IKRT
+              .col1 Maggie Wood
+              .col2
+                .rating 3.5
+            .card-content
+              .card-content-inner.card-content-inner-8IKRT
+                .row1 Professor at NJIT
+                .row2
+                  .col1 #[span 83] ratings
+                  .col2
+                    i.material-icons star
+                    i.material-icons star
+                    i.material-icons star
+                    i.material-icons star_half
+                    i.material-icons star_border
+                .row3
+                  .col1
+                    a(href='home/person-6.html')
+                      .left #[i.material-icons account_box]
+                      .right Show Profile
+                  #col2-8IKRT-p6.col2.col2-8IKRT
+                    .left Quick Overview
+                    .right #[i.material-icons details]
+                #row4-8IKRT-p6.row4-8IKRT.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            .card-footer.card-footer-8IKRT
+              .right
+                .inside-left Saved
+                .inside-right #[i.material-icons bookmark]
+          .card
+            .card-header.card-header-8IKRT
+              .col1 Regina Floyd
+              .col2
+                .rating 4
+            .card-content
+              .card-content-inner.card-content-inner-8IKRT
+                .row1 Professor at NJIT
+                .row2
+                  .col1 #[span 83] ratings
+                  .col2
+                    i.material-icons star
+                    i.material-icons star
+                    i.material-icons star
+                    i.material-icons star
+                    i.material-icons star_border
+                .row3
+                  .col1
+                    a(href='home/person-7.html')
+                      .left #[i.material-icons account_box]
+                      .right Show Profile
+                  #col2-8IKRT-p7.col2.col2-8IKRT
+                    .left Quick Overview
+                    .right #[i.material-icons details]
+                #row4-8IKRT-p7.row4-8IKRT.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            .card-footer.card-footer-8IKRT
+              .right
+                .inside-left Saved
+                .inside-right #[i.material-icons bookmark]
+        //- --> Students
+        #students.tab
+          .content-block-title Showing Your Saved Students
+          .card
+            .card-header.card-header-8IKRT
+              .col1 Randall Rivera
+              .col2
+                .rating 4.5
+            .card-content
+              .card-content-inner.card-content-inner-8IKRT
+                .row1 Student at NJIT
+                .row2
+                  .col1 #[span 201] ratings
+                  .col2
+                    i.material-icons star
+                    i.material-icons star
+                    i.material-icons star
+                    i.material-icons star
+                    i.material-icons star_half
+                .row3
+                  .col1
+                    a(href='home/person-1.html')
+                      .left #[i.material-icons account_box]
+                      .right Show Profile
+                  #col2-8IKRT-p1.col2.col2-8IKRT
+                    .left Quick Overview
+                    .right #[i.material-icons details]
+                #row4-8IKRT-p1.row4-8IKRT
+                  .row4-8IKRT-inside-student
+                    .row
+                      .col1 #[i.material-icons poll]
+                      .col2 Attends Group Meetings
+                      .col3 #[span.okay 3]/5
+                    .row
+                      .col1 #[i.material-icons poll]
+                      .col2 Contributes to Discussions
+                      .col3 #[span.good 5]/5
+                    .row
+                      .col1 #[i.material-icons poll]
+                      .col2 Completes Tasks on Time
+                      .col3 #[span.good 4]/5
+                    .row
+                      .col1 #[i.material-icons poll]
+                      .col2 Quality of Completed Work
+                      .col3 #[span.good 5]/5
+                    .row
+                      .col1 #[i.material-icons poll]
+                      .col2 Cooperative & Supportive
+                      .col3 #[span.okay 3]/5
+                    .row
+                      .col1 #[i.material-icons poll]
+                      .col2 Contributes Significantly
+                      .col3 #[span.okay 3]/5
+            .card-footer.card-footer-8IKRT
+              .right
+                .inside-left Saved
+                .inside-right #[i.material-icons bookmark]
+          .card
+            .card-header.card-header-8IKRT
+              .col1 Lionel Ford
+              .col2
+                .rating 2.5
+            .card-content
+              .card-content-inner.card-content-inner-8IKRT
+                .row1 Student at Rutgers
+                .row2
+                  .col1 #[span 30] ratings
+                  .col2
+                    i.material-icons star
+                    i.material-icons star
+                    i.material-icons star_half
+                    i.material-icons star_border
+                    i.material-icons star_border
+                .row3
+                  .col1
+                    a(href='home/person-3.html')
+                      .left #[i.material-icons account_box]
+                      .right Show Profile
+                  #col2-8IKRT-p3.col2.col2-8IKRT
+                    .left Quick Overview
+                    .right #[i.material-icons details]
+                #row4-8IKRT-p3.row4-8IKRT
+                  .row4-8IKRT-inside-student
+                    .row
+                      .col1 #[i.material-icons poll]
+                      .col2 Attends Group Meetings
+                      .col3 #[span.bad 2]/5
+                    .row
+                      .col1 #[i.material-icons poll]
+                      .col2 Contributes to Discussions
+                      .col3 #[span.good 5]/5
+                    .row
+                      .col1 #[i.material-icons poll]
+                      .col2 Completes Tasks on Time
+                      .col3 #[span.okay 3]/5
+                    .row
+                      .col1 #[i.material-icons poll]
+                      .col2 Quality of Completed Work
+                      .col3 #[span.bad 2]/5
+                    .row
+                      .col1 #[i.material-icons poll]
+                      .col2 Cooperative & Supportive
+                      .col3 #[span.okay 3]/5
+                    .row
+                      .col1 #[i.material-icons poll]
+                      .col2 Contributes Significantly
+                      .col3 #[span.bad 2]/5
+            .card-footer.card-footer-8IKRT
+              .right
+                .inside-left Saved
+                .inside-right #[i.material-icons bookmark]
+          .card
+            .card-header.card-header-8IKRT
+              .col1 Joyce Salazar
+              .col2
+                .rating 2
+            .card-content
+              .card-content-inner.card-content-inner-8IKRT
+                .row1 Student at NJIT
+                .row2
+                  .col1 #[span 83] ratings
+                  .col2
+                    i.material-icons star
+                    i.material-icons star
+                    i.material-icons star_border
+                    i.material-icons star_border
+                    i.material-icons star_border
+                .row3
+                  .col1
+                    a(href='home/person-5.html')
+                      .left #[i.material-icons account_box]
+                      .right Show Profile
+                  #col2-8IKRT-p5.col2.col2-8IKRT
+                    .left Quick Overview
+                    .right #[i.material-icons details]
+                #row4-8IKRT-p5.row4-8IKRT
+                  .row4-8IKRT-inside-student
+                    .row
+                      .col1 #[i.material-icons poll]
+                      .col2 Attends Group Meetings
+                      .col3 #[span.okay 3]/5
+                    .row
+                      .col1 #[i.material-icons poll]
+                      .col2 Contributes to Discussions
+                      .col3 #[span.bad 2]/5
+                    .row
+                      .col1 #[i.material-icons poll]
+                      .col2 Completes Tasks on Time
+                      .col3 #[span.bad N/A]
+                    .row
+                      .col1 #[i.material-icons poll]
+                      .col2 Quality of Completed Work
+                      .col3 #[span.bad N/A]
+                    .row
+                      .col1 #[i.material-icons poll]
+                      .col2 Cooperative & Supportive
+                      .col3 #[span.bad 2]/5
+                    .row
+                      .col1 #[i.material-icons poll]
+                      .col2 Contributes Significantly
+                      .col3 #[span.good 4]/5
+            .card-footer.card-footer-8IKRT
+              .right
+                .inside-left Saved
+                .inside-right #[i.material-icons bookmark]
+
+        //- --> Coupons
+        #coupons.tab
+          .content-block-title Showing Your Saved Coupons
+          .card
+            .card-header.card-header-MAFER
+              .col1 Kohl's
+              .col2 #[i.material-icons delete]
+            .card-content
+              .card-content-inner.card-content-inner-MAFER
+                .col1
+                  .row1 Extra 20% Off Your Order
+                  .row2 #[span Expires] 11/30/16
+                .col2
+                  .coupon-code p6iD7oy98Q
+          .card
+            .card-header.card-header-MAFER
+              .col1 Best Buy
+              .col2 #[i.material-icons delete]
+            .card-content
+              .card-content-inner.card-content-inner-MAFER
+                .col1
+                  .row1 20% Off On Apple Products
+                  .row2 #[span Expires] 12/05/16
+                .col2
+                  .coupon-code lRIaSXJ8Km
+          .card
+            .card-header.card-header-MAFER
+              .col1 Target
+              .col2 #[i.material-icons delete]
+            .card-content
+              .card-content-inner.card-content-inner-MAFER
+                .col1
+                  .row1 Extra 15% Off Your Order
+                  .row2 #[span Expires] 12/28/16
+                .col2
+                  .coupon-code PuOPCgjJwO
