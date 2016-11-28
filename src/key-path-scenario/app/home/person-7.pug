@@ -1,4 +1,4 @@
-//- Regina Floyd --> PROFESSOR
+//- Regina Floyd --> PROFESSOR --> HASH: 22KKZ
 .navbar
   .navbar-inner
     .left.sliding
@@ -7,8 +7,112 @@
         span Back
     .center.sliding Details
     .right
+      a(href='#' class='action-button') #[i.material-icons menu]
+
+    .subnavbar
+      .buttons-row
+        a(href='#overview' class='button tab-link active') Overview
+        a(href='#ratings' class='button tab-link') Ratings
 
 .pages
-  div(data-page='person-7' class='page')
-    .page-content
-      .content-block-title In The Works...
+  div(data-page='person-7' class='page with-subnavbar')
+    .page-content.hide-bars-on-scroll
+      .tabs
+        //- --> Overview
+        #overview.tab.active
+          .card
+            .card-header.card-header-0F8S7
+              .chc-left Regina Floyd
+              .chc-right #[span.good 4]/5
+            .card-content
+              .card-content-inner
+                .row.no-gutter
+                  .col-20 #[i.material-icons person]
+                  .col-80.col-80-0F8S7 Professor
+                .row.no-gutter
+                  .col-20 #[i.material-icons school]
+                  .col-80.col-80-0F8S7 NJIT
+                .row.no-gutter
+                  .col-20 #[i.material-icons subdirectory_arrow_right]
+                  .col-80.col-80-0F8S7 Computer Science
+
+          .content-block-title.content-block-title-0F8S7 Based On #[strong 43] Ratings
+          .card
+            .card-header.card-header-DPNI4 Ratings
+            .card-content
+              .card-content-inner
+                .card-content-inner-22KKZ
+                  .cci-row-1 #[i.material-icons poll]
+                  .cci-row-2 Ability to Communicate Course Content
+                  .cci-row-3 #[span.good 4]/5
+                .card-content-inner-22KKZ
+                  .cci-row-1 #[i.material-icons poll]
+                  .cci-row-2 Availability Outside of Class Hours
+                  .cci-row-3 #[span.good 5]/5
+                .card-content-inner-22KKZ
+                  .cci-row-1 #[i.material-icons poll]
+                  .cci-row-2 Fairness & Consistency in Grading
+                  .cci-row-3 #[span.good 4]/5
+                .card-content-inner-22KKZ
+                  .cci-row-1 #[i.material-icons poll]
+                  .cci-row-2 Knowledge of Course Material
+                  .cci-row-3 #[span.good 5]/5
+                .card-content-inner-22KKZ
+                  .cci-row-1 #[i.material-icons poll]
+                  .cci-row-2 Overall Teaching Effectivness
+                  .cci-row-3 #[span.good 4]/5
+
+        //- --> Ratings
+        #ratings.tab
+          .content-block-title Showing #[strong 28] Comments
+          //- Comment #1
+          .card
+            .card-header.card-header-0F8S7-comments
+              .chchcc-col1 11 Nov 2016
+              .chchcc-col2
+                i.material-icons star
+                i.material-icons star
+                i.material-icons star
+                i.material-icons star
+                i.material-icons star_border
+            .card-content
+              .accordion-item
+                .accordion-item-toggle
+                  .card-content-inner This professor was pretty cool. Very engaging and overall a great class. Would definitely take her again.
+                    .card-content-inner-recommend
+                      .ccir-left-yes #[i.material-icons done]
+                      .ccir-middle I would recommend this professor!
+                      .ccir-right #[i.material-icons details]
+                .accordion-item-content
+                  .content-block
+                    .content-block-inner
+                      .content-block-inner-class-info-22KKZ
+                        .left IS 661
+                        .right Fall 2016
+                      .content-block-inner-row-22KKZ
+                        .left #[i.material-icons poll]
+                        .middle Ability to Communicate Course Content
+                        .right #[span.good 4]/5
+                      .content-block-inner-row-22KKZ
+                        .left #[i.material-icons poll]
+                        .middle Availability Outside of Class Hours
+                        .right #[span.bad 2]/5
+                      .content-block-inner-row-22KKZ
+                        .left #[i.material-icons poll]
+                        .middle Fairness & Consistency in Grading
+                        .right #[span.okay 3]/5
+                      .content-block-inner-row-22KKZ
+                        .left #[i.material-icons poll]
+                        .middle Knowledge of Course Material
+                        .right #[span.good 5]/5
+                      .content-block-inner-row-22KKZ
+                        .left #[i.material-icons poll]
+                        .middle Overall Teaching Effectivness
+                        .right #[span.good 5]/5
+            .card-footer.card-footer-0F8S7-comments
+              .card-footer-inner-0F8S7
+                .col.col1 #[i.material-icons thumb_up]
+                .col.count 2
+                .col.col3 #[i.material-icons thumb_down]
+                .col.count 0
+                .col.col5 #[i.material-icons flag]
