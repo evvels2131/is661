@@ -1,0 +1,45 @@
+.navbar
+  .navbar-inner
+    .left.sliding
+      a(href='settings/index.html' class='link')
+        i.icon.icon-back
+        span Back
+    .center.sliding Help Center
+
+.pages
+  div(data-page='help-center' class='page')
+    .page-content
+      .content-block-title Contact Form
+      .list-block.inset
+        ul
+          li
+            a(
+              href='#'
+              class='item-link smart-select'
+              data-open-in='popup')
+              select(name='category')
+                option(value='gq' selected) General Questions
+                option(value='issues') Issues
+              .item-content
+                .item-media #[i.material-icons input]
+                .item-inner
+                  .item-title Category
+                  .item-after General Questions
+          li
+            .item-content
+              .item-media #[i.material-icons title]
+              .item-inner
+                .item-input
+                  input(type='text' placeholder='Title')
+          li.align-top
+            .item-content
+              .item-media #[i.material-icons insert_comment]
+              .item-inner
+                .item-input
+                  textarea
+      .content-block
+        .row
+          .col-50
+            a(href='settings/index.html' class='button button-big color-red-3QXQP') Cancel
+          .col-50
+            a(href='settings/index.html' class='button button-big color-green-3QXQP') Submit
