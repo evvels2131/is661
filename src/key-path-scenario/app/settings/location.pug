@@ -1,0 +1,22 @@
+.navbar
+  .navbar-inner
+    .left.sliding
+      a(href='settings/index.html' class='link')
+        i.icon.icon-back
+        span Back
+    .center.sliding Location
+
+div(data-page='location' class='page')
+  .page-content
+    .content-block-title Your Device Settings
+    .list-block.inset
+      ul
+        li
+          .item-content
+            .item-media #[i.material-icons near_me]
+            .item-inner
+              div(class='item-title label' style='width: 150px') Location Services
+              .input-item
+                label.label-switch
+                  input(type='checkbox')
+                  .checkbox
