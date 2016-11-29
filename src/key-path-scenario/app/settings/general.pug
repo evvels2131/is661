@@ -1,0 +1,107 @@
+.navbar
+  .navbar-inner
+    .left.sliding
+      a(href='settings/index.html' class='link')
+        i.icon.icon-back
+        span Back
+    .center.sliding General
+
+.pages
+  div(data-page='general' class='page')
+    .page-content
+      .content-block-title Account Information
+      .list-block.inset
+        ul
+          li
+            .item-content
+              .item-media #[i.material-icons account_box]
+              .item-inner
+                .item-input
+                  input(type='text' placeholder='Jake Simpson')
+          li
+            .item-content
+              .item-media #[i.material-icons email]
+              .item-inner
+                .item-input
+                  input(type='text' placeholder='jsim194@njit.edu')
+
+      .content-block-title School Information
+      .list-block
+        ul
+          li
+            a(
+              href='#'
+              class='item-link smart-select'
+              data-searchbar='true'
+              data-searchbar-placeholder='Search for a school...'
+              data-open-in='popup')
+              select(name='schools' multiple)
+                option(value='njit' selected) NJIT
+                option(value='rutgers' selected) Rutgers University
+                option(value='nyu') NYU
+                option(value='uw') University of Washington
+                option(value='berkeley') University of California, Berkeley
+                option(value='princton') Princeton University
+                option(value='kean') Kean University
+                option(value='rowan') Rowan University
+                option(value='shu') Seton Hall University
+                option(value='tcnj') The College of New Jersey
+                option(value='msu') Montclair State University
+                option(value='columbia') Columbia University
+                option(value='stanford') Stanford University
+              .item-content
+                .item-inner
+                  .item-title Schools
+                  .item-after NJIT, Rutgers University
+          li
+            a(
+              href='#'
+              class='item-link smart-select'
+              data-searchbar='true'
+              data-searchbar-placeholder='Search for a major...'
+              data-open-in='popup')
+              select(name='majors' multiple)
+                option(value='architecture') Architecture
+                option(value='cs' selected) Computer Science
+                option(value='is') Information Systems
+                option(value='bm-engineering') Bio-Medical Engineering
+                option(value='ce-engineering') Civil & Environmental Engineering
+                option(value='ec-engineering') Electrical & Computer Engineering
+                option(value='mi-engineering') Mechanical & Industrial Engineering
+                option(value='et') Engineering Technology
+                option(value='mathematics') Mathematics
+                option(value='physics') Physics
+                option(value='biology') Biology
+                option(value='ce-envscience') Chemistry & Environmental Sci.
+              .item-content
+                .item-inner
+                  .item-title Majors
+                  .item-after Computer Science
+
+      .content-block-title Password Reset
+      .list-block.inset
+        ul
+          li
+            .item-content
+              .item-media #[i.material-icons lock]
+              .item-inner
+                .item-input
+                  input(type='password' placeholder='Old Password')
+          li
+            .item-content
+              .item-media #[i.material-icons create]
+              .item-inner
+                .item-input
+                  input(type='password' placeholder='New Password')
+          li
+            .item-content
+              .item-media #[i.material-icons create]
+              .item-inner
+                .item-input
+                  input(type='password' placeholder='Repeat New Password')
+      .content-block
+        .row
+          .col-50
+            a(href='settings/index.html' class='button button-big color-red-3QXQP') Cancel
+          .col-50
+            a(href='settings/index.html' class='button button-big color-green-3QXQP') Save
