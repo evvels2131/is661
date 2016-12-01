@@ -1,0 +1,236 @@
+//- Rate Student
+.navbar
+  .navbar-inner
+    .left.sliding
+      a(href='index.html' class='link')
+        i.icon.icon-back
+        span Cancel
+    .center.sliding Rating Submission
+    .right
+
+.pages
+  div(data-page='rate-new-professor' class='page')
+    .page-content
+      .mandatory-info-YKN4M All Fields With An #[strong *ASTERISK*] Are Mandatory
+      .content-block-title Professor Information
+      .list-block
+        ul
+          li
+            .item-content
+              .item-media #[i.material-icons account_box] #[span(style='color: red') *]
+              .item-inner
+                .item-input
+                  input(type='text' placeholder='John Smith')
+      .content-block-title School Information
+      .list-block
+        ul
+          li
+            a(href='#' class='item-link smart-select')
+              select(name='college')
+                option(value='njit' selected) NJIT
+                option(value='rutgers') Rutgers
+              .item-content
+                .item-inner
+                  .item-title School #[span(style='color: red') *]
+                  .item-after NJIT
+          li
+            a(href='#' class='item-link smart-select')
+              select(name='department')
+                option(value='na') Not Available
+                option(value='architecture') Architecture
+                option(value='cs' selected) Computer Science
+                option(value='is') Information Systems
+                option(value='bm-engineering') Bio-Medical Engineering
+                option(value='ce-engineering') Civil & Environmental Engineering
+                option(value='ec-engineering') Electrical & Computer Engineering
+                option(value='mi-engineering') Mechanical & Industrial Engineering
+                option(value='et') Engineering Technology
+                option(value='mathematics') Mathematics
+                option(value='physics') Physics
+                option(value='biology') Biology
+                option(value='ce-envscience') Chemistry & Environmental Sci.
+              .item-content
+                .item-inner
+                  .item-title Department
+                  .item-after Computer Science
+
+      .card
+        .card-content
+          .card-content-inner
+            .cci-rating-0F8S7
+              .ccir-row1.ccir-row1-YKN4M #[span *]Ability to Communicate Course Content
+              .ccir-row2
+                fieldset.rating
+                  input#star5(type='radio', name='rating', value='5')
+                  label.full(for='star5', title='Awesome - 5 stars')
+                  input#star4half(type='radio', name='rating', value='4 and a half')
+                  label.half(for='star4half', title='Pretty good - 4.5 stars')
+                  input#star4(type='radio', name='rating', value='4')
+                  label.full(for='star4', title='Pretty good - 4 stars')
+                  input#star3half(type='radio', name='rating', value='3 and a half')
+                  label.half(for='star3half', title='Meh - 3.5 stars')
+                  input#star3(type='radio', name='rating', value='3')
+                  label.full(for='star3', title='Meh - 3 stars')
+                  input#star2half(type='radio', name='rating', value='2 and a half')
+                  label.half(for='star2half', title='Kinda bad - 2.5 stars')
+                  input#star2(type='radio', name='rating', value='2')
+                  label.full(for='star2', title='Kinda bad - 2 stars')
+                  input#star1half(type='radio', name='rating', value='1 and a half')
+                  label.half(for='star1half', title='Meh - 1.5 stars')
+                  input#star1(type='radio', name='rating', value='1')
+                  label.full(for='star1', title='Sucks big time - 1 star')
+                  input#starhalf(type='radio', name='rating', value='half')
+                  label.half(for='starhalf', title='Sucks big time - 0.5 stars')
+              .ccir-row3
+                .col1
+                  .col1-inside-left #[i.material-icons trending_flat]
+                  .col1-inside-right Awful
+                .col2
+                  .col2-inside-left #[i.material-icons trending_flat]
+                  .col2-inside-right Great
+      .card
+        .card-content
+          .card-content-inner
+            .cci-rating-0F8S7
+              .ccir-row1.ccir-row1-YKN4M #[span *]Availability Outside of Class Hours
+              .ccir-row2
+                fieldset.rating
+                  input#star5-2(type='radio', name='rating-2', value='5')
+                  label.full(for='star5-2', title='Awesome - 5 stars')
+                  input#star4half-2(type='radio', name='rating-2', value='4 and a half')
+                  label.half(for='star4half-2', title='Pretty good - 4.5 stars')
+                  input#star4-2(type='radio', name='rating-2', value='4')
+                  label.full(for='star4-2', title='Pretty good - 4 stars')
+                  input#star3half-2(type='radio', name='rating-2', value='3 and a half')
+                  label.half(for='star3half-2', title='Meh - 3.5 stars')
+                  input#star3-2(type='radio', name='rating-2', value='3')
+                  label.full(for='star3-2', title='Meh - 3 stars')
+                  input#star2half-2(type='radio', name='rating-2', value='2 and a half')
+                  label.half(for='star2half-2', title='Kinda bad - 2.5 stars')
+                  input#star2-2(type='radio', name='rating-2', value='2')
+                  label.full(for='star2-2', title='Kinda bad - 2 stars')
+                  input#star1half-2(type='radio', name='rating-2', value='1 and a half')
+                  label.half(for='star1half-2', title='Meh - 1.5 stars')
+                  input#star1-2(type='radio', name='rating-2', value='1')
+                  label.full(for='star1-2', title='Sucks big time - 1 star')
+                  input#starhalf-2(type='radio', name='rating-2', value='half')
+                  label.half(for='starhalf-2', title='Sucks big time - 0.5 stars')
+              .ccir-row3
+                .col1
+                  .col1-inside-left #[i.material-icons trending_flat]
+                  .col1-inside-right Awful
+                .col2
+                  .col2-inside-left #[i.material-icons trending_flat]
+                  .col2-inside-right Great
+      .card
+        .card-content
+          .card-content-inner
+            .cci-rating-0F8S7
+              .ccir-row1.ccir-row1-YKN4M #[span *]Fairness & Consistency in Grading
+              .ccir-row2
+                fieldset.rating
+                  input#star5-3(type='radio', name='rating-3', value='5')
+                  label.full(for='star5-3', title='Awesome - 5 stars')
+                  input#star4half-3(type='radio', name='rating-3', value='4 and a half')
+                  label.half(for='star4half-3', title='Pretty good - 4.5 stars')
+                  input#star4-3(type='radio', name='rating-3', value='4')
+                  label.full(for='star4-3', title='Pretty good - 4 stars')
+                  input#star3half-3(type='radio', name='rating-3', value='3 and a half')
+                  label.half(for='star3half-3', title='Meh - 3.5 stars')
+                  input#star3-3(type='radio', name='rating-3', value='3')
+                  label.full(for='star3-3', title='Meh - 3 stars')
+                  input#star2half-3(type='radio', name='rating-3', value='2 and a half')
+                  label.half(for='star2half-3', title='Kinda bad - 2.5 stars')
+                  input#star2-3(type='radio', name='rating-3', value='2')
+                  label.full(for='star2-3', title='Kinda bad - 2 stars')
+                  input#star1half-3(type='radio', name='rating-3', value='1 and a half')
+                  label.half(for='star1half-3', title='Meh - 1.5 stars')
+                  input#star1-3(type='radio', name='rating-3', value='1')
+                  label.full(for='star1-3', title='Sucks big time - 1 star')
+                  input#starhalf-3(type='radio', name='rating-3', value='half')
+                  label.half(for='starhalf-3', title='Sucks big time - 0.5 stars')
+              .ccir-row3
+                .col1
+                  .col1-inside-left #[i.material-icons trending_flat]
+                  .col1-inside-right Awful
+                .col2
+                  .col2-inside-left #[i.material-icons trending_flat]
+                  .col2-inside-right Great
+      .card
+        .card-content
+          .card-content-inner
+            .cci-rating-0F8S7
+              .ccir-row1.ccir-row1-YKN4M #[span *]Knowledge of Course Material
+              .ccir-row2
+                fieldset.rating
+                  input#star5-4(type='radio', name='rating-4', value='5')
+                  label.full(for='star5-4', title='Awesome - 5 stars')
+                  input#star4half-4(type='radio', name='rating-4', value='4 and a half')
+                  label.half(for='star4half-4', title='Pretty good - 4.5 stars')
+                  input#star4-4(type='radio', name='rating-4', value='4')
+                  label.full(for='star4-4', title='Pretty good - 4 stars')
+                  input#star3half-4(type='radio', name='rating-4', value='3 and a half')
+                  label.half(for='star3half-4', title='Meh - 3.5 stars')
+                  input#star3-4(type='radio', name='rating-4', value='3')
+                  label.full(for='star3-4', title='Meh - 3 stars')
+                  input#star2half-4(type='radio', name='rating-4', value='2 and a half')
+                  label.half(for='star2half-4', title='Kinda bad - 2.5 stars')
+                  input#star2-4(type='radio', name='rating-4', value='2')
+                  label.full(for='star2-4', title='Kinda bad - 2 stars')
+                  input#star1half-4(type='radio', name='rating-4', value='1 and a half')
+                  label.half(for='star1half-4', title='Meh - 1.5 stars')
+                  input#star1-4(type='radio', name='rating-4', value='1')
+                  label.full(for='star1-4', title='Sucks big time - 1 star')
+                  input#starhalf-4(type='radio', name='rating-4', value='half')
+                  label.half(for='starhalf-4', title='Sucks big time - 0.5 stars')
+              .ccir-row3
+                .col1
+                  .col1-inside-left #[i.material-icons trending_flat]
+                  .col1-inside-right Awful
+                .col2
+                  .col2-inside-left #[i.material-icons trending_flat]
+                  .col2-inside-right Great
+      .card
+        .card-content
+          .card-content-inner
+            .cci-rating-0F8S7
+              .ccir-row1.ccir-row1-YKN4M #[span *]Overall Teaching Effectivness
+              .ccir-row2
+                fieldset.rating
+                  input#star5-5(type='radio', name='rating-5', value='5')
+                  label.full(for='star5-5', title='Awesome - 5 stars')
+                  input#star4half-5(type='radio', name='rating-5', value='4 and a half')
+                  label.half(for='star4half-5', title='Pretty good - 4.5 stars')
+                  input#star4-5(type='radio', name='rating-5', value='4')
+                  label.full(for='star4-5', title='Pretty good - 4 stars')
+                  input#star3half-5(type='radio', name='rating-5', value='3 and a half')
+                  label.half(for='star3half-5', title='Meh - 3.5 stars')
+                  input#star3-5(type='radio', name='rating-5', value='3')
+                  label.full(for='star3-5', title='Meh - 3 stars')
+                  input#star2half-5(type='radio', name='rating-5', value='2 and a half')
+                  label.half(for='star2half-5', title='Kinda bad - 2.5 stars')
+                  input#star2-5(type='radio', name='rating-5', value='2')
+                  label.full(for='star2-5', title='Kinda bad - 2 stars')
+                  input#star1half-5(type='radio', name='rating-5', value='1 and a half')
+                  label.half(for='star1half-5', title='Meh - 1.5 stars')
+                  input#star1-5(type='radio', name='rating-5', value='1')
+                  label.full(for='star1-5', title='Sucks big time - 1 star')
+                  input#starhalf-5(type='radio', name='rating-5', value='half')
+                  label.half(for='starhalf-5', title='Sucks big time - 0.5 stars')
+              .ccir-row3
+                .col1
+                  .col1-inside-left #[i.material-icons trending_flat]
+                  .col1-inside-right Awful
+                .col2
+                  .col2-inside-left #[i.material-icons trending_flat]
+                  .col2-inside-right Great
+      .content-block
+        .row
+          .col-50
+            a(
+              href='index.html'
+              class='button button-big color-red-3QXQP') Cancel
+          .col-50
+            a(
+              href='home/rate-new-professor-continue.html'
+              class='button button-big color-green-3QXQP') Next

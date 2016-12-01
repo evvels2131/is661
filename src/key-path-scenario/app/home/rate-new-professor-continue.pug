@@ -1,0 +1,128 @@
+//- Rate Student
+.navbar
+  .navbar-inner
+    .left.sliding
+      a(href='home/rate-new-professor.html' class='link')
+        i.icon.icon-back
+        span Back
+    .center.sliding Rating Submission
+    .right
+
+.pages
+  div(data-page='rate-new-professor-continue' class='page')
+    .page-content
+      .mandatory-info-YKN4M All Fields With An #[strong *ASTERISK*] Are Mandatory
+      .content-block-title Course Information
+      .list-block
+        ul
+          li
+            .item-content
+              .item-media #[i.material-icons title] #[span(style='color: red') *]
+              .item-inner
+                .item-input
+                  input(type='text' placeholder='Course Title & Number')
+          li
+            .item-content
+              .item-media #[i.material-icons school] #[span(style='color: red') *]
+              .item-inner
+                .item-input
+                  input(type='text' placeholder='Semester')
+          li
+            .item-content
+              .item-media #[i.material-icons event] #[span(style='color: red') *]
+              .item-inner
+                .item-input
+                  input(type='text' placeholder='Year')
+
+      .content-block-title School Information
+      .list-block
+        ul
+          li
+            a(href='#' class='item-link smart-select')
+              select(name='college')
+                option(value='njit' selected) NJIT
+                option(value='rutgers') Rutgers
+              .item-content
+                .item-inner
+                  .item-title School #[span(style='color: red') *]
+                  .item-after NJIT
+      .custom-professor-rating-YKN4M
+        .cpr-inner #[span *]Tough Grader
+        .list-block
+          ul
+            li
+              label.label-radio.item-content
+                input(type='radio' name='radio1' value='v1' checked='checked')
+                .item-inner
+                  .item-title Yes
+            li
+              label.label-radio.item-content
+                input(type='radio' name='radio1' value='v1')
+                .item-inner
+                  .item-title No
+      .custom-professor-rating-YKN4M
+        .cpr-inner #[span *]Gives Good Feedback
+        .list-block
+          ul
+            li
+              label.label-radio.item-content
+                input(type='radio' name='radio2' value='v1' checked='checked')
+                .item-inner
+                  .item-title Yes
+            li
+              label.label-radio.item-content
+                input(type='radio' name='radio2' value='v1')
+                .item-inner
+                  .item-title No
+      .custom-professor-rating-YKN4M
+        .cpr-inner #[span *]Lots of Homework
+        .list-block
+          ul
+            li
+              label.label-radio.item-content
+                input(type='radio' name='radio3' value='v1' checked='checked')
+                .item-inner
+                  .item-title Yes
+            li
+              label.label-radio.item-content
+                input(type='radio' name='radio3' value='v1')
+                .item-inner
+                  .item-title No
+      .custom-professor-rating-YKN4M
+        .cpr-inner #[span *]Exams
+        .list-block
+          ul
+            li
+              label.label-radio.item-content
+                input(type='radio' name='radio4' value='v1' checked='checked')
+                .item-inner
+                  .item-title Yes
+            li
+              label.label-radio.item-content
+                input(type='radio' name='radio4' value='v1')
+                .item-inner
+                  .item-title No
+      .custom-professor-rating-YKN4M
+        .cpr-inner #[span *]Group Projects
+        .list-block
+          ul
+            li
+              label.label-radio.item-content
+                input(type='radio' name='radio5' value='v1' checked='checked')
+                .item-inner
+                  .item-title Yes
+            li
+              label.label-radio.item-content
+                input(type='radio' name='radio5' value='v1')
+                .item-inner
+                  .item-title No
+      .content-block
+        .row
+          .col-50
+            a(
+              href='home/rate-new-professor.html'
+              class='button button-big button-custom-YKN4M-blue') Back
+          .col-50
+            a(
+              href='home/rating-submission-confirmation.html'
+              class='button button-big color-green-3QXQP') Submit
