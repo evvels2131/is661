@@ -94,7 +94,31 @@
       '.btn-save-coupon',
       'You have successfully saved this coupon'
     );
-  })
+  });
+
+  myApp.onPageInit('rate-new-professor-continue', function (page) {
+    console.log('rate-new-professor-continue');
+    showAlert(
+      '.btn-rate-new-professor-continue',
+      'You have successfully submitted a rating'
+    );
+  });
+
+  myApp.onPageInit('rate-new-student', function (page) {
+    console.log('rate-new-student');
+    showAlert(
+      '.btn-rate-new-student',
+      'You have successfully submitted a rating'
+    );
+  });
+
+  myApp.onPageInit('add-missing-info', function (page) {
+    console.log('add-missing-info');
+    showAlert(
+      '.btn-add-missing-info',
+      'You have successfully completed your profile'
+    );
+  });
 
   function showAlert(btn, msg) {
     $$(btn).on('click', function () {
