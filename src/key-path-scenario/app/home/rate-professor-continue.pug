@@ -2,14 +2,14 @@
 .navbar
   .navbar-inner
     .left.sliding
-      a(href='home/rate-new-professor.html' class='link')
+      a(href='home/rate-professor.html' class='link')
         i.icon.icon-back
         span Back
     .center.sliding Course Rating
     .right
 
 .pages
-  div(data-page='rate-new-professor-continue' class='page')
+  div(data-page='rate-professor-continue' class='page')
     .page-content
       .mandatory-info-YKN4M All Fields With An #[strong *ASTERISK*] Are Mandatory
       .content-block-title Course Information
@@ -34,18 +34,6 @@
                 .item-input
                   input(type='text' placeholder='Year')
 
-      .content-block-title School Information
-      .list-block
-        ul
-          li
-            a(href='#' class='item-link smart-select')
-              select(name='college')
-                option(value='njit' selected) NJIT
-                option(value='rutgers') Rutgers
-              .item-content
-                .item-inner
-                  .item-title School #[span(style='color: red') *]
-                  .item-after NJIT
       .custom-professor-rating-YKN4M
         .cpr-inner #[span *]Tough Grader
         .list-block
@@ -120,9 +108,9 @@
         .row
           .col-50
             a(
-              href='home/rate-new-professor.html'
+              href='home/rate-professor.html'
               class='button button-big button-custom-YKN4M-blue') Back
           .col-50
             a(
               href='home/rating-submission-confirmation.html'
-              class='button button-big color-green-3QXQP') Submit
+              class='button button-big color-green-3QXQP btn-rate-professor-continue') Submit

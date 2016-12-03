@@ -50,22 +50,57 @@
 
     // `More` Button in Person View
     $$('.action-button').on('click', function () {
-      console.log('action button clicked');
       const buttons = [
-        {
-          text: '<a href="home/rate-student.html">Rate This Person</a>'
-        },
-        {
-          text: '<a href="bookmarks/index.html">Save This Person</a>'
-        },
-        {
-          text: 'Cancel',
-          color: 'red'
-        },
+        { text: '<a href="home/rate-student.html">Rate This Student</a>' },
+        { text: 'Save This Student' },
+        { text: 'Cancel', color: 'red' },
       ];
       myApp.actions(buttons);
     });
   });
+
+  myApp.onPageInit('person-2', function (page) {
+    console.log('person-2');
+
+    $$('.action-button').on('click', function () {
+      const buttons = [
+        { text: '<a href="home/rate-professor.html">Rate This Professor</a>' },
+        { text: 'Save This Professor' },
+        { text: 'Cancel', color: 'red' }
+      ];
+      myApp.actions(buttons);
+    });
+  });
+
+  myApp.onPageInit('rate-student', function (page) {
+    console.log('rate-student');
+    showAlert(
+      '.btn-rate-student',
+      'You have successfully submitted a rating'
+    );
+  });
+
+  myApp.onPageInit('rate-professor-continue', function (page) {
+    console.log('rate-professor-continue');
+    showAlert(
+      '.btn-rate-professor-continue',
+      'You have successfully submitted a rating'
+    );
+  });
+
+  myApp.onPageInit('rating-submission-confirmation', function (page) {
+    console.log('rating-submission-confirmation');
+    showAlert(
+      '.btn-save-coupon',
+      'You have successfully saved this coupon'
+    );
+  })
+
+  function showAlert(btn, msg) {
+    $$(btn).on('click', function () {
+      myApp.alert(msg, 'Success!');
+    });
+  }
 
   function addActive(id) {
     const links = $$('.toolbar-inner').children();
