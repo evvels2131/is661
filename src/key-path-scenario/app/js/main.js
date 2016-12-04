@@ -37,6 +37,13 @@
     $$('#col2-8IKRT-p5').on('click', function () {
       $$('#row4-8IKRT-p5').toggleClass('row4-8IKRT-show-student');
     });
+
+    showConfirmation(
+      'Delete Item',
+      '.btn-delete-bookmark',
+      'Are you sure you want to delete this item?'
+    );
+
   });
 
   // `Settings` view
@@ -120,9 +127,33 @@
     );
   });
 
+  myApp.onPageInit('general', function (page) {
+    console.log('general');
+    showAlert(
+      '.btn-general-save',
+      'You have successfully submitted your changes'
+    );
+  });
+
+  myApp.onPageInit('help-center', function (page) {
+    console.log('help-center');
+    showAlert(
+      '.btn-help-center-save',
+      'You have successfully sent your message'
+    );
+  });
+
   function showAlert(btn, msg) {
     $$(btn).on('click', function () {
       myApp.alert(msg, 'Success!');
+    });
+  }
+
+  function showConfirmation(title, btn, msg) {
+    $$(btn).on('click', function () {
+      myApp.confirm(msg, title, function () {
+        myApp.alert('You deleted this item.', 'Success!');
+      });
     });
   }
 
