@@ -7,7 +7,7 @@
 #### The goal was to design and develop a prototype for a mobile application, similar to RateMyProfessor, with improvements based on the analysis done throughout the semester.
 
 #### Links
-* [HomePage](http://goto1.github.io/is661/docs) <br />
+* [Homepage](http://goto1.github.io/is661/docs) <br />
 * [Yelp Landing Page](http://goto1.github.io/is661/docs/yelp-mockup/landing-page.html) <br />
 * [Yelp Business Page](http://goto1.github.io/is661/docs/yelp-mockup/business-page.html) <br />
 * [Yelp Reviewer's Page](http://goto1.github.io/is661/docs/yelp-mockup/reviewer-page.html) <br />
