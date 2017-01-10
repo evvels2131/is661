@@ -6,7 +6,7 @@
 ### Final Project Description
 <p>The goal was to design and develop a prototype for a mobile application, similar to RateMyProfessor, with improvements based on the analysis done throughout the semester.</p>
 
-#### Links
+### Links
 * [Homepage](https://goto1.github.io/is661/docs/) <br />
 * [Yelp Landing Page](https://goto1.github.io/is661/docs/yelp-mockup/landing-page.html) <br />
 * [Yelp Business Page](https://goto1.github.io/is661/docs/yelp-mockup/business-page.html) <br />
