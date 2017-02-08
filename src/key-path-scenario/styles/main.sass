@@ -1,3 +1,5 @@
+@import 'normalize.css'
+
 $font-stack: 'Roboto', Helvetica, sans-serif
 
 $text-color: #756233
@@ -6,6 +8,7 @@ $bkg-color: #F2F2F3
 body
   font: 100% $font-stack
   background-image: url('../../img/key-path-scenario/bg-img.png')
+  min-width: 500px
 
 .container
   max-width: 960px
@@ -40,15 +43,18 @@ hr
 
 .main-row-2
   margin-top: 25px
+  display: flex
+  justify-content: center
   .content
     text-align: center
     position: relative
+    width: 440px
 
     .iframes
       iframe
         position: absolute
-        top: 94px
-        left: 285px
+        top: 11%
+        left: 5.5%
         height: 679px
         width: 385px
         border: 3px solid black
